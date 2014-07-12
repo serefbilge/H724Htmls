@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="Content/venere_assets/home_page_alljs_v.55.53132.js"></script>
+    <script src="Content/venere_assets/home_page_searchbox_children_en_row.js"></script>
+    <link href="whitey_header.css" rel="stylesheet" />
+    <link href="Content/venere_assets/home_page_allcss_v.55.53132.css" rel="stylesheet" />
+    <script src="Content/venere_assets/main.js"></script>
+
+    <link href="Content/style01.css" rel="stylesheet" />
+    <link href="Content/landing.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/fullscreen.css" rel="stylesheet" />
+    <link href="Content/custom.css" rel="stylesheet" />
+    <link href="Content/assets/Masonry/masonry.css" rel="stylesheet" />
+    
+    <style type="text/css">
+        .headerfixed {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            transition: .2s;
+        }
+    </style>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scrolltopoffset = $(window).scrollTop();
+                if (scrolltopoffset > 200) {
+                    $(".ht-header").addClass("headerfixed");
+                }
+                //else {
+                //    $(".ht-header").removeClass("headerfixed");
+                //}
+            });
+        });
+
+    </script>
+
+</head>
+<body class='js-authentication-modal' data-env='production' data-valid-hosts='^www\.housetrip\.(?:com|fr|de|es|it)$' style="overflow-x: hidden;">
+
+    <div class='ht-loading-indicator full-page'>
+        <div class='loader'>
+            <div class='circle'></div>
+        </div>
+        <div class='notice'>
+        </div>
+    </div>
+
+    <div class='ht-mobile-overlays'></div>
+
+    <div class='ht-main'>
+        <nav class='ht-header js-kissmetrics-layer navbar navbar-default' role='navigation'>
+            <div class='ht-container'>
+                <div class='navbar-header' itemscope='' itemtype='http://schema.org/Organization'>
+                    <button class='ht-navbar-toggle navbar-toggle' data-target='.ht-navbar-collapse' data-toggle='collapse' type='button'>
+                        <span class='sr-only'>Toggle navigation</span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                        <span class='icon-bar'></span>
+                    </button>
+                    <a href="/" class="navbar-brand" itemprop="url">
+                        <img alt="HouseTrip" class="logo" itemprop="logo" src="Content/images/logo.png" />
+                    </a>
+                </div>
+                <div class='ht-navbar-collapse collapse navbar-collapse navbar-right'>
+                </div>
+            </div>
+        </nav>
+
+        <section class='hero js-kissmetrics-layer' style="background: url('background.jpg') fixed 100%; height: 700px;">
+            <div class='hero-background js-fader' data-images="Content/images/background.jpg"></div>
+            <div class='container' style="margin-left: 215px;">
+                <div class='hero-strapline js-ie-sensitive'>
+                </div>
+                <div class='hero-search ht-search-box' data-type='search-form'>
+                    <div class='row'>
+                        <div class='col-xs-12'>
+                            <form action="/en/search-holiday-apartments" autocomplete="off" class="new_property_search" id="new_property_search" method="get">
+                                <div class='ht-search-field' style="width: 910px; position: fixed; z-index: 500;">
+                                    <div class='search-input' data-countries='Countries' data-districts='Districts' data-locations='Cities' data-regions='Regions' data-validation='Start typing to see the complete list'>
+                                        <input class="js-ie-sensitive text_field" id="property_search_destination_name" name="property_search[destination_name]" placeholder="e.g. Paris, London, Tuscany" size="30" type="text" />
+                                        <input id="property_search_destination_id" name="property_search[destination_id]" type="hidden" />
+                                        <ul class='destination-results'></ul>
+                                    </div>
+
+                                    <div class='search-button'>
+                                        <button class='btn searchButton' id='search_now'>
+                                            <img src="Content/images/search-btn.png" style="margin: -8px 0px 0px -10px;" />
+
+                                            <!--<span class='glyphicon ht-icon-search'></span>-->
+                                        </button>
+                                    </div>
+                                    <div class='search-guests' style="margin-right: 40px;">
+                                        <div id="themewrapper">
+                                            <div id="searchbox" style="width: 50px;" class="searchwidget NoCallcenter">
+                                                <form id="vSearch" name="vSearch" action="/site/index.php" onsubmit="return false;" autocorrect="off">
+                                                    <input type="hidden" name="lg" value="en" />
+                                                    <input type="hidden" name="geoid" value="" />
+                                                    <input type="hidden" name="city_area" value="" />
+                                                    <input type="hidden" name="ac_text" value="" />
+                                                    <strong id="sb-title"></strong>
+
+                                                    <input type="hidden" name="pval" value="null" />
+                                                    <input type="hidden" name="rval" value="null" />
+                                                    <input type="hidden" name="rgval" class="rgval" value="" />
+                                                    <span class="searchbox-elem">
+                                                        <div class="pr_val_textfield" style="margin: 1px 0px 0px -10px; position: absolute"></div>
+
+                                                        <!--<span id="searchbox_guests_rooms" class="sb-label">Rooms & Guests</span>-->
+                                                        <div class="pr_val_container" style="width: 199px; margin-left: -40px; margin-top: -15px;">
+                                                            <!--<img src="Content/images/calculator.png" />-->
+                                                            <input tabindex="4" class="pr_val_fake" name="pr_val_fake" type="text" value="" />
+                                                            <div class="pr_val_PopupButton" style="width: 30px; height: 30px; margin-top: -20px; cursor: pointer;"></div>
+                                                            <div class="pr_val_modal" style="width: 465px">
+                                                                <div class="pr_val_modal_content">
+                                                                    <div class="sw-rooms-list"></div>
+                                                                    <div class="searchbox_modal_footer">
+                                                                        <button class="button btn-grey sw_accept_modal">OK</button>
+                                                                        <!--                                                                            <a class="closeOpenPopUp" href="#">Ok</a>-->
+                                                                        <!--<input type="button" class="button btn-grey sw_accept_modal" value="Ok"/>-->
+                                                                    </div>
+                                                                    <div class="sw_close_modal"><span>&nbsp;</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="sw_background_modal"></div>
+
+                                                        </div>
+                                                    </span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='ht-separator'></div>
+
+                                    <div class='search-calendar js-search-calendar' data-translations='{"calendar":{"days_of_week_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"months_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"inputs":{"nights":"{{= nights }} nights","night":"{{= nights }} night"},"clearNotice":"I don&apos;t know my dates yet"}'>
+                                        <div class='glyphicon ht-icon-calendar js-toggle'></div>
+                                        <input class="start-date date-display js-start-date-to-show" id="date_picker_property_search_from_date_pretty" name="date_picker_property_search[from_date_pretty]" placeholder="Check in" type="text" value="" />
+                                        <input class="end-date date-display js-end-date-to-show" id="date_picker_property_search_end_date_pretty" name="date_picker_property_search[end_date_pretty]" placeholder="Check out" type="text" value="" />
+                                        <input class="js-start-date-to-submit" id="property_search_from_date" name="property_search[from_date]" type="hidden" />
+                                        <input class="js-end-date-to-submit" id="property_search_to_date" name="property_search[to_date]" type="hidden" />
+                                        <div class='js-remove-dates glyphicon ht-icon-remove'></div>
+                                        <span class='js-number-of-nights number-of-nights'>0 nights</span>
+                                        <div class='ht-loading-indicator'></div>
+                                    </div>
+                                    <div class='ht-separator' style="display: none;"></div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <div style="z-index: 600; position: relative; background: #f2f2f2!important;">
+        <div class="container lnews">
+            Latest news
+        </div>
+
+        <div class="masonry">
+            <div class="item wt2 ht2">
+                <div class="msbox2">
+                    <a href="#">
+                        <img src="/Content/images/update1/pic01.jpg" class="fhimg2 left" alt=""></a>
+                </div>
+            </div>
+            <div class="item ht2">
+                <div class="msbox2">
+                    <a href="#">
+                        <img src="/Content/images/update1/pic02.jpg" class="fhimg" alt=""></a>
+                    <p class="msctext padding20" style="padding: 20px;">
+                        <span class="newstitle"><a href="#">The Experts in African Safari Travel</a></span><br />
+                        <br />
+                        Sed auctor erat sit amet lorem venenatis, in feugiat nisl fermentum. Nam luctus adipiscing dapibus. Nunc leo felis, ornare non commodo a, elementum a risus.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="msbox" style="margin-top: -246px;">
+                    <a href="#">
+                        <img src="/Content/images/update1/pic03.jpg" class="fhimg" alt=""></a>
+                </div>
+            </div>
+            <div class="item ht2">
+                <div class="msbox2">
+                    <a href="#">
+                        <img src="/Content/images/update1/pic04.jpg" class="fhimg" alt=""></a>
+                    <p class="msctext padding20" style="padding: 20px;">
+                        <span class="newstitle"><a href="#">Velassaru Beach Resort Island Paradise - Maldives</a></span>
+                        <span class="glyphicon glyphicon-star lblue"></span>
+                        <span class="glyphicon glyphicon-star lblue"></span>
+                        <span class="glyphicon glyphicon-star lblue"></span>
+                        <span class="glyphicon glyphicon-star lblue"></span>
+                        <span class="glyphicon glyphicon-star lblue"></span>
+                        <br />
+                        <br />
+                        Sed auctor erat sit amet lorem venenatis, in feugiat nisl fermentum. Nam luctus adipiscing dapibus. Nunc leo felis, ornare non commodo a, elementum a risus.
+                    </p>
+                </div>
+            </div>
+            <div class="item wt2">
+                <div class="msbox">
+                    <div class="w50percent msctext padding20 left" style="padding: 20px;">
+                        <span class="newstitle"><a href="#">Aquaventure Waterpark and The Lost Chambers Aquarium</a></span><br />
+                        <br />
+                        Sed auctor erat sit amet lorem venenatis, in feugiat nisl fermentum. Nam luctus adipiscing dapibus. Nunc leo felis, ornare non commodo a.
+                    </div>
+                    <div class="w50percentlast right">
+                        <a href="#">
+                            <img src="/Content/images/update1/pic06.jpg" class="fwimg " alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="msbox">
+                    <a href="#">
+                        <img src="/Content/images/update1/pic05.jpg" class="fhimg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <br />
+            <br />
+            <br />
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+
+
+        <!-- END OF WRAP -->
+
+    </div>
+
+    <div class="footerbg lcfix" style="background-color: white !important">
+        <div class="container">
+            <footer>
+                <div class="footer">
+                    <a href="#" class="social1">
+                        <img src="/Content/images/icon-facebook.png" alt="" /></a>
+                    <a href="#" class="social2">
+                        <img src="/Content/images/icon-twitter.png" alt="" /></a>
+                    <a href="#" class="social3">
+                        <img src="/Content/images/icon-gplus.png" alt="" /></a>
+                    <a href="#" class="social4">
+                        <img src="/Content/images/icon-youtube.png" alt="" /></a>
+                    <br />
+                    <br />
+                    Copyright &copy; 2013 <a href="#">Travel Agency</a> All rights reserved. <a href="http://titanicthemes.com">TitanicThemes.com</a>
+                    <br />
+                    <br />
+                    <a href="#top" id="gotop2" class="gotop">
+                        <img src="/Content/images/spacer.png" alt="" /></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- This page JS -->
+    <script src="~/Content/js/js-new-homepage.js"></script>
+    <!-- Custom functions -->
+    <script src="~/Content/js/functions.js"></script>
+    <!-- Picker UI-->
+    <script src="~/Content/assets/jquery-ui/jquery-ui.js"></script>
+    <!-- Easing -->
+    <script src="~/Content/assets/jquery/jquery.easing.js"></script>
+    <!-- jQuery KenBurn Slider  -->
+    <script src="~/Content/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Nicescroll  -->
+    <script src="~/Content/assets/jquery/jquery.nicescroll.min.js"></script>
+    <!-- CarouFredSel -->
+    <script src="~/Content/assets/jquery/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="~/Content/assets/jquery/helper-plugins/jquery.touchSwipe.min.js"></script>
+    <script src="~/Content/assets/jquery/helper-plugins/jquery.mousewheel.min.js"></script>
+    <script src="~/Content/assets/jquery/helper-plugins/jquery.transit.min.js"></script>
+    <script src="~/Content/assets/jquery/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+    <!-- Custom Select -->
+    <script src="~/Content/assets/jquery/jquery.customSelect.js"></script>
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            HouseTrip.Views.SearchBar.load();
+            new HouseTrip.Views.Homepage({ el: 'body' });
+
+            HouseTrip.Helpers.KissMetrics.setProperty({ "Visited Responsive Home Page": "Yes" });
+            HouseTrip.Helpers.KissMetrics.setUserProperties();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            HouseTrip.navigationBar = new HouseTrip.Views.NavigationBar({
+                el: '.ht-navbar-collapse',
+                model: new HouseTrip.Models.NavigationBar({ "path": "/en/v4/layout/navigation_bar" })
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewHome1", "NewHome1\NewHome1.csproj", "{3F9C27E5-C5D8-44CE-8866-A7701A5DFFE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TitanicNewHome", "TitanicNewHome\TitanicNewHome.csproj", "{EEB5C6EB-13F0-49FE-BFC5-48F261AAD6E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F9C27E5-C5D8-44CE-8866-A7701A5DFFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9C27E5-C5D8-44CE-8866-A7701A5DFFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9C27E5-C5D8-44CE-8866-A7701A5DFFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9C27E5-C5D8-44CE-8866-A7701A5DFFE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB5C6EB-13F0-49FE-BFC5-48F261AAD6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB5C6EB-13F0-49FE-BFC5-48F261AAD6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB5C6EB-13F0-49FE-BFC5-48F261AAD6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB5C6EB-13F0-49FE-BFC5-48F261AAD6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

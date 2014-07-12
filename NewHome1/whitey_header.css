@@ -1,0 +1,225 @@
+﻿.ht-header {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+@media (min-width: 481px) {
+    .ht-header {
+        border-bottom: none;
+    }
+}
+
+.ht-header .ht-nav-separator {
+    background: #e2e2e2;
+    width: 1px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+.ht-header .ht-navbar-toggle:focus, .ht-header .ht-navbar-toggle:hover, .ht-header .ht-navbar-toggle:active {
+    background: #fff;
+}
+
+.ht-header .ht-navbar-toggle > .icon-bar {
+    background: #666;
+}
+
+.ht-header .ht-message-item, .ht-header .ht-header-profile-item, .ht-header .ht-navigation-signedout-item, .ht-header .ht-currency-language-item, .ht-header .ht-mobile-localization-item, .ht-header .ht-housetrip-plus-item {
+    border: none;
+}
+
+    .ht-header .ht-message-item:hover > a, .ht-header .ht-header-profile-item:hover > a, .ht-header .ht-navigation-signedout-item:hover > a, .ht-header .ht-currency-language-item:hover > a, .ht-header .ht-mobile-localization-item:hover > a, .ht-header .ht-housetrip-plus-item:hover > a {
+        color: #32b7c5;
+    }
+
+        .ht-header .ht-message-item:hover > a .ht-icon-envelope, .ht-header .ht-header-profile-item:hover > a .ht-icon-envelope, .ht-header .ht-navigation-signedout-item:hover > a .ht-icon-envelope, .ht-header .ht-currency-language-item:hover > a .ht-icon-envelope, .ht-header .ht-mobile-localization-item:hover > a .ht-icon-envelope, .ht-header .ht-housetrip-plus-item:hover > a .ht-icon-envelope {
+            color: #32b7c5;
+        }
+
+        .ht-header .ht-message-item:hover > a .ht-icon-moon, .ht-header .ht-header-profile-item:hover > a .ht-icon-moon, .ht-header .ht-navigation-signedout-item:hover > a .ht-icon-moon, .ht-header .ht-currency-language-item:hover > a .ht-icon-moon, .ht-header .ht-mobile-localization-item:hover > a .ht-icon-moon, .ht-header .ht-housetrip-plus-item:hover > a .ht-icon-moon {
+            background-color: #32b7c5;
+        }
+
+    .ht-header .ht-message-item > a, .ht-header .ht-header-profile-item > a, .ht-header .ht-navigation-signedout-item > a, .ht-header .ht-currency-language-item > a, .ht-header .ht-mobile-localization-item > a, .ht-header .ht-housetrip-plus-item > a {
+        color: #333;
+    }
+
+.ht-header .ht-dropdown-menu .ht-header-profile-item > a {
+    color: #32b7c5;
+}
+
+    .ht-header .ht-dropdown-menu .ht-header-profile-item > a:hover {
+        color: #1b798a;
+    }
+
+.ht-header .ht-message-item > a:hover, .ht-header .ht-header-profile-item > a:hover, .ht-header .ht-navigation-signedout-item > a:hover, .ht-header .ht-currency-language-item > a:hover, .ht-header .ht-mobile-localization-item > a:hover, .ht-header .ht-housetrip-plus-item > a:hover, .ht-header .ht-message-item > a:active, .ht-header .ht-header-profile-item > a:active, .ht-header .ht-navigation-signedout-item > a:active, .ht-header .ht-currency-language-item > a:active, .ht-header .ht-mobile-localization-item > a:active, .ht-header .ht-housetrip-plus-item > a:active {
+    color: #32b7c5;
+}
+
+.ht-header-separator {
+    border: #666;
+}
+
+.ht-header .ht-message-item:hover, .ht-header .ht-header-profile-item:hover, .ht-header .ht-navigation-signedout-item:hover, .ht-header .ht-currency-language-item:hover, .ht-header .ht-mobile-localization-item:hover, .ht-header .ht-housetrip-plus-item:hover {
+    background-color: #fff;
+}
+
+.ht-header .ht-header-profile-item .ht-dropdown a {
+    color: #32b7c5;
+}
+
+    .ht-header .ht-header-profile-item .ht-dropdown a:hover {
+        color: #1b798a;
+    }
+
+.ht-header {
+    background-color: #fff;
+    color: #000;
+}
+
+    .ht-header .glyphicon {
+        color: #999;
+    }
+
+        .ht-header .glyphicon:hover {
+            color: #32b7c5;
+        }
+
+    .ht-header .caret {
+        border-top-color: #999;
+        border-bottom-color: #999;
+    }
+
+    .ht-header .ht-last-item {
+        border-right: none;
+    }
+
+    .ht-header .ht-mobile-localization-item select {
+        color: #333;
+    }
+
+    .ht-header .ht-mobile-localization-item:hover select, .ht-header .ht-mobile-localization-item:hover .glyphicon {
+        color: #32b7c5;
+    }
+
+    .ht-header .ht-dropdown-menu {
+        border: 1px solid #999;
+        border-color: rgba(0,0,0,0.25);
+        background-color: #fff;
+    }
+
+        .ht-header .ht-dropdown-menu > .arrow:after {
+            border-color: transparent transparent #fff transparent;
+        }
+
+        .ht-header .ht-dropdown-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .ht-header .ht-dropdown-menu ul > .ht-dropdown-title {
+                color: #999;
+            }
+
+                .ht-header .ht-dropdown-menu ul > .ht-dropdown-title:hover, .ht-header .ht-dropdown-menu ul > .ht-dropdown-title:active {
+                    background-color: transparent;
+                }
+
+            .ht-header .ht-dropdown-menu ul a {
+                color: #32b7c5;
+            }
+
+                .ht-header .ht-dropdown-menu ul a:hover, .ht-header .ht-dropdown-menu ul a:active {
+                    background-color: #fff;
+                    color: #1b798a;
+                }
+
+    .ht-header .ht-housetrip-plus-item .glyphicon {
+        color: #fff;
+        background-color: #999;
+        border-color: #999;
+    }
+
+    .ht-header .ht-housetrip-plus-item:hover .glyphicon {
+        background-color: #32b7c5;
+        border-color: #32b7c5;
+    }
+
+    .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-view-account:hover {
+        color: #1b798a;
+    }
+
+    .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu .ht-terms > a:hover {
+        color: #1b798a;
+    }
+
+    .ht-header .navbar-right .ht-housetrip-plus-item > .ht-dropdown-menu {
+        border: 1px solid #999;
+        border-color: rgba(0,0,0,0.25);
+        background: #fff;
+        color: #333;
+    }
+
+        .ht-header .navbar-right .ht-housetrip-plus-item > .ht-dropdown-menu > .arrow:after {
+            border-color: transparent transparent #fff transparent;
+        }
+
+    .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-description > .ht-free-nights, .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-description > .ht-free-nights, .ht-header .ht-search-filters > .ht-filter-menu.ht-housetrip-plus-item > ul > div > a > .ht-description > .ht-free-nights, .ht-header .ht-search-distance-filter.ht-housetrip-plus-item > .ht-search-distance-options > div > a > .ht-description > .ht-free-nights {
+        color: #666;
+    }
+
+    .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-description, .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-description, .ht-header .ht-search-filters > .ht-filter-menu.ht-housetrip-plus-item > ul > div > a > .ht-description, .ht-header .ht-search-distance-filter.ht-housetrip-plus-item > .ht-search-distance-options > div > a > .ht-description {
+        color: #999;
+        border-top-color: #999;
+    }
+
+    .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-headline, .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a > .ht-headline, .ht-header .ht-search-filters > .ht-filter-menu.ht-housetrip-plus-item > ul > div > a > .ht-headline, .ht-header .ht-search-distance-filter.ht-housetrip-plus-item > .ht-search-distance-options > div > a > .ht-headline {
+        color: #333;
+    }
+
+    .ht-header .ht-navbar-collapse > .ht-navbar > li.ht-housetrip-plus-item > .ht-housetrip-plus-dropdown-menu > div > a > .ht-description {
+        border-top-color: #999;
+    }
+
+    .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a .ht-credits-earned-icons .ht-icon {
+        border: none;
+        background: #999;
+        color: #fff;
+    }
+
+        .ht-header .ht-housetrip-plus-item > .ht-dropdown-menu > div > a .ht-credits-earned-icons .ht-icon.active {
+            background: #32b7c5;
+        }
+
+.ht-navbar.visible-xs .ht-message-item, .ht-navbar.visible-xs .ht-header-profile-item, .ht-navbar.visible-xs .ht-navigation-signedout-item, .ht-navbar.visible-xs .ht-currency-language-item, .ht-navbar.visible-xs .ht-mobile-localization-item, .ht-navbar.visible-xs .ht-housetrip-plus-item {
+    border-top: 1px solid #e2e2e2;
+}
+
+    .ht-navbar.visible-xs .ht-housetrip-plus-item .glyphicon {
+        color: #999;
+        background: none;
+        border: none;
+    }
+
+    .ht-navbar.visible-xs .ht-housetrip-plus-item:hover .glyphicon {
+        background: none;
+    }
+
+    .ht-navbar.visible-xs .ht-message-item:hover, .ht-navbar.visible-xs .ht-header-profile-item:hover, .ht-navbar.visible-xs .ht-navigation-signedout-item:hover, .ht-navbar.visible-xs .ht-currency-language-item:hover, .ht-navbar.visible-xs .ht-mobile-localization-item:hover, .ht-navbar.visible-xs .ht-housetrip-plus-item:hover {
+        background: #e2e2e2;
+    }
+
+        .ht-navbar.visible-xs .ht-message-item:hover .glyphicon, .ht-navbar.visible-xs .ht-header-profile-item:hover .glyphicon, .ht-navbar.visible-xs .ht-navigation-signedout-item:hover .glyphicon, .ht-navbar.visible-xs .ht-currency-language-item:hover .glyphicon, .ht-navbar.visible-xs .ht-mobile-localization-item:hover .glyphicon, .ht-navbar.visible-xs .ht-housetrip-plus-item:hover .glyphicon {
+            color: #32b7c5;
+        }
+
+.ht-button-default.ht-button-small {
+    border-color: #999 !important;
+    color: #999 !important;
+}
+
+    .ht-button-default.ht-button-small:hover {
+        border-color: #333 !important;
+        color: #333 !important;
+    }
