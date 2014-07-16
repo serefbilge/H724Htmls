@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,9 +8,17 @@
     <!-- Bootstrap -->
     <link href="Content/assets/bootstrap3.0.3/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/custom.css" rel="stylesheet" />
-
     <link href="Content/style01.css" rel="stylesheet" />
+	<!-- Search box-->
+	<link href="Content/searchbox/main.css" rel="stylesheet" />
+    <script src="Content/searchbox/home_page_alljs_v.55.53132.js"></script>
+    <script src="Content/searchbox/home_page_searchbox_children_en_row.js"></script>
+    <link href="Content/searchbox/home_page_allcss_v.55.53132.css" rel="stylesheet" />
+    
 
+	<!-- Search box end-->
+	
+	
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="Content/assets/html5shiv.js"></script>
@@ -31,7 +39,7 @@
 
     <!-- jQuery -->
     <script src="Content/assets/jquery/jquery.v2.0.3.js"></script>
-
+<script src="Content/searchbox/main.js"></script>
     <!-- Masonry -->
     <link href="Content/assets/Masonry/masonry.css" rel="stylesheet" />
     <script src="Content/assets/Masonry/masonry.pkgd.js"></script>
@@ -185,26 +193,96 @@
     #################################
     -->
     <div id="dajy" class="fullscreen-container2 mtslideb sliderbg fixed">
-
-        <div class="searchcontainer textcenter" style="">
+        <div class="searchcontainer textcenter">
             <span class="lato size48 slim white ">Where do you want to go?</span><br />
+            <div class="wh95percent center">
+                <div class='container'>
+					<div class='hero-search ht-search-box' data-type='search-form'>
+						<div class='row'>
+							<div class='col-xs-12'>
+								<form action="/en/search-holiday-apartments" autocomplete="off" class="new_property_search" id="new_property_search" method="get">
+									<div class='ht-search-field'>
+										<div class='search-input' data-countries='Countries' data-districts='Districts' data-locations='Cities' data-regions='Regions' data-validation='Start typing to see the complete list'>
+											<input class="js-ie-sensitive text_field" id="property_search_destination_name" name="property_search[destination_name]" placeholder="e.g. Paris, London, Tuscany" size="30" type="text"/>
+											<input id="property_search_destination_id" name="property_search[destination_id]" type="hidden" />
+											<ul class='destination-results'></ul>
+										</div>
 
-            <div class=" wh95percent center">
-                <input type="text" class="form-control inph left" placeholder="ex: New York" />
-                <button class="btn btn-default nbtn-search right" type="button">
-                    <span class="glyphicon glyphicon-search"></span>
-                </button>
+										<div class='search-button'>
+											<button class='btn searchButton' id='search_now'>
+												<img src="Content/images/search-btn.png" style="margin: -10px 0px 0px -2px;" />
+											</button>
+										</div>
+										<div class='search-guests' style="margin-right: 40px;">
+											<div id="themewrapper">
+												<div id="searchbox" style="width: 50px;" class="searchwidget NoCallcenter">
+													<form id="vSearch" name="vSearch" action="/site/index.php" onsubmit="return false;" autocorrect="off">
+														<input type="hidden" name="lg" value="en" />
+														<input type="hidden" name="geoid" value="" />
+														<input type="hidden" name="city_area" value="" />
+														<input type="hidden" name="ac_text" value="" />
+														<strong id="sb-title"></strong>
+
+														<input type="hidden" name="pval" value="null" />
+														<input type="hidden" name="rval" value="null" />
+														<input type="hidden" name="rgval" class="rgval" value="" />
+														<span class="searchbox-elem">
+															<div class="pr_val_textfield" style="margin: 1px 0px 0px -10px; position: absolute"></div>
+
+															<!--<span id="searchbox_guests_rooms" class="sb-label">Rooms & Guests</span>-->
+															<div class="pr_val_container" style=" margin-left: -40px; margin-top: -15px;">
+																<!--<img src="Content/images/calculator.png" />-->
+																<input tabindex="4" class="pr_val_fake" name="pr_val_fake" type="text" value="" />
+																<div class="pr_val_PopupButton" style="width: 30px; height: 30px; margin-top: -16px; cursor: pointer;"></div>
+																<div class="pr_val_modal" style="width: 465px">
+																	<div class="pr_val_modal_content">
+																		<div class="sw-rooms-list"></div>
+																		<div class="searchbox_modal_footer">
+																			<button class="button btn-grey sw_accept_modal" style="line-height:18px !important; color:#000 !important;">OK</button>
+																			<!-- <a class="closeOpenPopUp" href="#">Ok</a>-->
+																			<!--<input type="button" class="button btn-grey sw_accept_modal" value="Ok"/>-->
+																		</div>
+																		<div class="sw_close_modal"><span>&nbsp;</span></div>
+																	</div>
+																</div>
+																<div class="sw_background_modal"></div>
+
+															</div>
+														</span>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class='ht-separator'></div>
+
+										<div class='search-calendar js-search-calendar' data-translations='{"calendar":{"days_of_week_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"months_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"inputs":{"nights":"{{= nights }} nights","night":"{{= nights }} night"},"clearNotice":"I don&apos;t know my dates yet"}'>
+											<div class='glyphicon ht-icon-calendar js-toggle'></div>
+											<input class="start-date date-display js-start-date-to-show" id="date_picker_property_search_from_date_pretty" name="date_picker_property_search[from_date_pretty]" placeholder="Check in" type="text" value="" />
+											<input class="end-date date-display js-end-date-to-show" id="date_picker_property_search_end_date_pretty" name="date_picker_property_search[end_date_pretty]" placeholder="Check out" type="text" value="" />
+											<input class="js-start-date-to-submit" id="property_search_from_date" name="property_search[from_date]" type="hidden" />
+											<input class="js-end-date-to-submit" id="property_search_to_date" name="property_search[to_date]" type="hidden" />
+											<div class='js-remove-dates glyphicon ht-icon-remove'></div>
+											<span class='js-number-of-nights number-of-nights'>0 nights</span>
+											<div class='ht-loading-indicator'></div>
+										</div>
+										<div class='ht-separator' style="display: none;"></div>
+
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-
         </div>
-
         <div class="fullscreenbanner">
             <ul>
 
                 <!-- papercut fade turnoff flyin slideright slideleft slideup slidedown-->
                 <!-- FADE -->
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
-                    <img src="Content/images/update1/slider/slide1.jpg" alt="" />
+                    <img src="Content/images/background.jpg" alt="" />
                     <div class="tp-caption scrolleffect sft"
                          data-x="center"
                          data-y="120"
@@ -215,49 +293,13 @@
                 </li>
 
                 <!-- FADE -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+               
 
-                    <img src="Content/images/update1/slider/slide2.jpg" alt="" />
-                    <div class="tp-caption scrolleffect sft"
-                         data-x="center"
-                         data-y="120"
-                         data-speed="1000"
-                         data-start="800"
-                         data-easing="easeOutExpo">
-
-                    </div>
-                </li>
-
-                <!-- FADE -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
-                    <img src="Content/images/update1/slider/slide3.jpg" alt="" />
-                    <div class="tp-caption scrolleffect sft"
-                         data-x="center"
-                         data-y="120"
-                         data-speed="1000"
-                         data-start="800"
-                         data-easing="easeOutExpo">
-
-                    </div>
-                </li>
-
-                <!-- FADE -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
-                    <img src="Content/images/update1/slider/slide4.jpg" alt="" />
-                    <div class="tp-caption scrolleffect sft"
-                         data-x="center"
-                         data-y="120"
-                         data-speed="1000"
-                         data-start="800"
-                         data-easing="easeOutExpo">
-
-                    </div>
-                </li>
+               
             </ul>
             <div class="tp-bannertimer none"></div>
         </div>
     </div>
-
     <!--
     ##############################
      - ACTIVATE THE BANNER HERE -
@@ -285,8 +327,8 @@
                     thumbAmount: 3,
 
                     hideThumbs: 0,
-                    navigationType: "bullet",				// bullet, thumb, none
-                    navigationArrows: "solo",				// nexttobullets, solo (old name verticalcentered), none
+                    navigationType: "none",				// bullet, thumb, none
+                    navigationArrows: "none",				// nexttobullets, solo (old name verticalcentered), none
 
                     navigationStyle: false,				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
 
@@ -331,82 +373,203 @@
 
     <!-- WRAP -->
     <div class="wrap cst03 bgfix">
-
-        <div class="container lnews">
-            Latest news
-        </div>
-
-        <div class="masonry">
-            <div class="item wt2 ht2">
-                <div class="msbox2"><a href="#"><img src="Content/images/update1/pic01.jpg" class="fhimg2 left" alt=""></a></div>
-            </div>
-            <div class="item ht2">
-                <div class="msbox2">
-                    <a href="#"><img src="Content/images/update1/pic02.jpg" class="fhimg" alt=""></a>
-                    <p class="msctext padding20">
-                        <span class="newstitle"><a href="#">The Experts in African Safari Travel</a></span><br /><br />
-                        Sed auctor erat sit amet lorem venenatis, in feugiat nisl fermentum. Nam luctus adipiscing dapibus. Nunc leo felis, ornare non commodo a, elementum a risus.
-                    </p>
-                </div>
-            </div>
-            <div class="item ">
-                <div class="msbox"><a href="#"><img src="Content/images/update1/pic03.jpg" class="fhimg" alt=""></a></div>
-            </div>
-            <div class="item ht2">
-                <div class="msbox2">
-                    <a href="#"><img src="Content/images/update1/pic04.jpg" class="fhimg" alt=""></a>
-                    <p class="msctext padding20">
-                        <span class="newstitle"><a href="#">Velassaru Beach Resort Island Paradise - Maldives</a></span>
-                        <span class="glyphicon glyphicon-star lblue"></span>
-                        <span class="glyphicon glyphicon-star lblue"></span>
-                        <span class="glyphicon glyphicon-star lblue"></span>
-                        <span class="glyphicon glyphicon-star lblue"></span>
-                        <span class="glyphicon glyphicon-star lblue"></span>
-                        <br /><br />
-                        Sed auctor erat sit amet lorem venenatis, in feugiat nisl fermentum. Nam luctus adipiscing dapibus. Nunc leo felis, ornare non commodo a, elementum a risus.
-                    </p>
-                </div>
-            </div>
-            <div class="item wt2">
-                <div class="msbox">
-                    <div class="w50percent msctext padding20 left">
-                        <span class="newstitle"><a href="#">Aquaventure Waterpark and The Lost Chambers Aquarium</a></span><br /><br />
-                        Sed auctor erat sit amet lorem venenatis, in feugiat nisl fermentum. Nam luctus adipiscing dapibus. Nunc leo felis, ornare non commodo a.
-                    </div>
-                    <div class="w50percentlast right">
-                        <a href="#"><img src="Content/images/update1/pic06.jpg" class="fwimg " alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="msbox"><a href="#"><img src="Content/images/update1/pic05.jpg" class="fhimg" alt=""></a></div>
-            </div>
-        </div>
-
-        <div>
-            <br />
-            <br />
-            <br />
+		<div class="container cstyle06 topcontent">	
+			<div class="row anim2">
+			  <div class="col-md-3">
+				<h2>Today's Top<br>Deals</h2><br>
+				Start your search with a look at the best rates on our site. 
+			  </div>
+			  <div class="col-md-9">
+				<!-- Carousel -->
+				<div class="wrapper">
+					<div class="list_carousel">
+						<div class="caroufredsel_wrapper" >
+								<ul id="foo">
+									<li>
+										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Dubai</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>
+									</li>
+									<li>
+										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Dubai</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>
+									</li>
+									<li>
+										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+								</ul>
+							</div>
+						<div class="clearfix"></div>
+						<a href="#" class="prev" id="prev_btn" style="display: block;"><img alt="" src="images/spacer.png"></a>
+						<a href="#" class="next" id="next_btn" style="display: block;"><img alt="" src="images/spacer.png"></a>
+					</div>
+				</div>
+			  </div>
+			</div>	
+			<hr class="featurette-divider2">
+			<div class="row anim3">
+			  <div class="col-md-3">
+				<h2>Featured<br>Offers</h2><br>
+				Start your search with a look at the best rates on our site. 
+			  </div>
+			  <div class="col-md-9">
+			  
+				<!-- Carousel -->
+				<div class="wrapper">
+					<div class="list_carousel">		
+						<div class="caroufredsel_wrapper">
+							<ul id="foo2">
+							
+							
+							<li style="margin-right: 20px;">
+								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<div class="m1">
+									<h6 class="lh1 dark"><b>Machu Picchu</b></h6>
+									<h6 class="lh1 green">Save up to 30%</h6>							
+								</div>	
+							</li>	
+							<li style="margin-right: 20px;">
+								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<div class="m1">
+									<h6 class="lh1 dark"><b>South Africa Adventures</b></h6>
+									<h6 class="lh1 green">Save up to 30%</h6>							
+								</div>							
+							</li>
+							<li style="margin-right: 20px;">
+								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<div class="m1">
+									<h6 class="lh1 dark"><b>Egipt</b></h6>
+									<h6 class="lh1 green">Save up to 30%</h6>							
+								</div>							
+							</li>
+							<li style="margin-right: 20px;">
+								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<div class="m1">
+									<h6 class="lh1 dark"><b>Machu Picchu</b></h6>
+									<h6 class="lh1 green">Save up to 30%</h6>							
+								</div>	
+							</li>						
+						<li style="margin-right: 20px;">
+								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<div class="m1">
+									<h6 class="lh1 dark"><b>South Africa Adventures</b></h6>
+									<h6 class="lh1 green">Save up to 30%</h6>							
+								</div>							
+							</li><li style="margin-right: 20px;">
+								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<div class="m1">
+									<h6 class="lh1 dark"><b>Egipt</b></h6>
+									<h6 class="lh1 green">Save up to 30%</h6>							
+								</div>							
+							</li></ul></div>
+						<div class="clearfix"></div>
+						<a href="#" class="prev" id="prev_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
+						<a href="#" class="next" id="next_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
+					</div>
+				</div>
+			  </div>
+			</div>			
+		</div>
+        <div>   
+        <br/>
         </div>
 
         <!-- FOOTER -->
 
-        <div class="footerbg lcfix">
-            <div class="container">
-                <footer>
-                    <div class="footer">
-                        <a href="#" class="social1"><img src="Content/images/icon-facebook.png" alt="" /></a>
-                        <a href="#" class="social2"><img src="Content/images/icon-twitter.png" alt="" /></a>
-                        <a href="#" class="social3"><img src="Content/images/icon-gplus.png" alt="" /></a>
-                        <a href="#" class="social4"><img src="Content/images/icon-youtube.png" alt="" /></a>
-                        <br /><br />
-                        Copyright &copy; 2013 <a href="#">Travel Agency</a> All rights reserved. <a href="http://titanicthemes.com">TitanicThemes.com</a>
-                        <br /><br />
-                        <a href="#top" id="gotop2" class="gotop"><img src="Content/images/spacer.png" alt="" /></a>
-                    </div>
-                </footer>
-            </div>
-        </div>
+        <div class="footerbgblack">
+		<div class="container">		
+			
+			<div class="col-md-3">
+				<span class="ftitleblack">Let's socialize</span>
+				<div class="scont">
+					<a class="social1b" href="#"><img alt="" src="Content/images/icon-facebook.png"></a>
+					<a class="social2b" href="#"><img alt="" src="Content/images/icon-twitter.png"></a>
+					<a class="social3b" href="#"><img alt="" src="Content/images/icon-gplus.png"></a>
+					<a class="social4b" href="#"><img alt="" src="Content/images/icon-youtube.png"></a>
+					<br><br><br>
+					<a href="#"><img alt="" src="Content/images/logosmal_old.png"></a><br>
+					<span class="grey2">&copy; 2013  |  <a href="#">Privacy Policy</a><br>
+					All Rights Reserved </span>
+					<br><br>
+					
+				</div>
+			</div>
+			<!-- End of column 1-->
+			
+			<div class="col-md-3">
+				<span class="ftitleblack">Travel Specialists</span>
+				<br><br>
+				<ul class="footerlistblack">
+					<li><a href="#">Golf Vacations</a></li>
+					<li><a href="#">Ski &amp; Snowboarding</a></li>
+					<li><a href="#">Disney Parks Vacations</a></li>
+					<li><a href="#">Disneyland Vacations</a></li>
+					<li><a href="#">Disney World Vacations</a></li>
+					<li><a href="#">Vacations As Advertised</a></li>
+				</ul>
+			</div>
+			<!-- End of column 2-->		
+			
+			<div class="col-md-3">
+				<span class="ftitleblack">Travel Specialists</span>
+				<br><br>
+				<ul class="footerlistblack">
+					<li><a href="#">Weddings</a></li>
+					<li><a href="#">Accessible Travel</a></li>
+					<li><a href="#">Disney Parks</a></li>
+					<li><a href="#">Cruises</a></li>
+					<li><a href="#">Round the World</a></li>
+					<li><a href="#">First Class Flights</a></li>
+				</ul>				
+			</div>
+			<!-- End of column 3-->		
+			
+			<div class="col-md-3 grey">
+				<span class="ftitleblack">Newsletter</span>
+				<div class="relative">
+					<input type="email" placeholder="Enter email" id="exampleInputEmail1" class="form-control fccustom2black">
+					<button class="btn btn-default btncustom" type="submit">Submit<img alt="" src="Content/images/arrow.png"></button>
+				</div>
+				<br><br>
+				<span class="ftitleblack">Customer support</span><br>
+				<span class="pnr">1-866-599-6674</span><br>
+				<span class="grey2">office@travel.com</span>
+			</div>			
+			<!-- End of column 4-->			
+		
+			
+		</div>	
+	</div>
     </div>
     <!-- END OF WRAP -->
     <!-- Javascript -->
@@ -433,7 +596,24 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="Content/assets/bootstrap3.0.3/js/bootstrap.min.js"></script>
+ <script type='text/javascript'>
+        $(document).ready(function () {
+            HouseTrip.Views.SearchBar.load();
+            new HouseTrip.Views.Homepage({ el: 'body' });
 
+            HouseTrip.Helpers.KissMetrics.setProperty({ "Visited Responsive Home Page": "Yes" });
+            HouseTrip.Helpers.KissMetrics.setUserProperties();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            HouseTrip.navigationBar = new HouseTrip.Views.NavigationBar({
+                el: '.ht-navbar-collapse',
+                model: new HouseTrip.Models.NavigationBar({ "path": "/en/v4/layout/navigation_bar" })
+            });
+        });
+    </script>
 
 </body>
 </html>
