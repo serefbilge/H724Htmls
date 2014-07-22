@@ -9,11 +9,13 @@
     <link href="Content/assets/bootstrap3.0.3/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/custom.css" rel="stylesheet" />
     <link href="Content/style01.css" rel="stylesheet" />
+	
 	<!-- Search box-->
 	<link href="Content/searchbox/main.css" rel="stylesheet" />
     <script src="Content/searchbox/home_page_alljs_v.55.53132.js"></script>
     <script src="Content/searchbox/home_page_searchbox_children_en_row.js"></script>
     <link href="Content/searchbox/home_page_allcss_v.55.53132.css" rel="stylesheet" />
+	
     
 
 	<!-- Search box end-->
@@ -28,22 +30,35 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet' type='text/css'>
     <!-- Font-Awesome -->
-    <link href="Content/assets/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
-
+	<link href="Content/assets/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
     <!-- REVOLUTION BANNER CSS SETTINGS -->
     <link href="Content/fullscreen.css" rel="stylesheet" />
-    <link href="Content/assets/rs-plugin/css/settings.css" rel="stylesheet" />
-
+	<link href="Content/assets/rs-plugin/css/settings.css" rel="stylesheet" />
     <!-- Picker UI-->
     <link href="Content/assets/jquery-ui/jquery-ui.css" rel="stylesheet" />
-
-    <!-- jQuery -->
+    
+<!-- jQuery -->
     <script src="Content/assets/jquery/jquery.v2.0.3.js"></script>
-<script src="Content/searchbox/main.js"></script>
-    <!-- Masonry -->
+	<script src="Content/searchbox/main.js"></script>
+   
+	<!-- Masonry -->
     <link href="Content/assets/Masonry/masonry.css" rel="stylesheet" />
-    <script src="Content/assets/Masonry/masonry.pkgd.js"></script>
-
+	<script>
+	$(document).ready(function(){
+		$('#mcal').click(function(){
+		//alert('date click');
+			$('.pr_val_modal').hide();
+			//$('.datepicker_desktop').css("display: block");
+		});	
+	
+		//$('.glyphicon').click(function(){
+		//alert('man click');
+		//	$('.datepicker_desktop').css("display: none");
+			//$('.pr_val_modal').css("display: block");
+		//});	
+	
+	});
+	</script>
     <script>
         docReady(function () {
 
@@ -66,15 +81,14 @@
 
         });
     </script>
+	
 
 </head>
 <body id="top">
-
     <!-- Top wrapper -->
     <div class="navbar-wrapper3 navbar-fixed-top2">
         <div class="container">
-            <div class="navbar mtnav2">
-                <div class="container offset-3">
+            <div class="navbar">
                     <!-- Navigation-->
                     <div class="navbar-header">
                         <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
@@ -87,102 +101,59 @@
                         </a>
                     </div>
                     <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown active">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="index.html">Home <span class="badge indent0">1</span><b class="lightcaret mt-2"></b></a>
-                                <ul class="dropdown-menu posright-0">
-                                    <li>
-                                        <div class="row dropwidth01">
-                                            <ul class="droplist col-md-4">
-                                                <li class="dropdown-header">Homepages</li>
-                                                <li><a href="index.html">Home 1 minimal</a></li>
-                                                <li><a href="index2.html">Home 2 offers</a></li>
-                                                <li><a href="index3.html">Home 3 full search</a></li>
-                                                <li><a href="index4.html">Home 4 presentation</a></li>
-                                                <li><a href="index5.html">Home 5 footer2</a></li>
-                                                <li><a href="index6.html">Home 6 full</a></li>
-                                                <li><a href="index7.html">Home 7 </a></li>
-                                                <li><a href="z-new-homepage.html">New Homepage</a> <span class="green">new</span></li>
-                                            </ul>
-                                            <ul class="droplist col-md-4">
-                                                <li class="dropdown-header">Intro pages</li>
-                                                <li><a href="intro.html">Intro 1</a></li>
-                                                <li><a href="intro2.html">Intro 2 - slides</a> <span class="glyphicon glyphicon-star lblue"></span></li>
-                                                <li><a href="intro3.html">Intro 3 - slides2</a> <span class="glyphicon glyphicon-star lblue"></span></li>
-                                            </ul>
-                                            <ul class="droplist col-md-4">
-                                                <li class="dropdown-header">Colors</li>
-                                                <li><a href="../blue/index.html">Blue</a></li>
-                                                <li><a href="../green/index.html">Green</a></li>
-                                                <li><a href="../orange/index.html">Orange</a></li>
-                                                <li><a href="../cyan/index.html">Cyan</a></li>
-                                                <li></li>
-                                                <li class="inactive size10 lgrey caps"><span class="glyphicon glyphicon-star "></span>Popular pages</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <ul class="nav navbar-nav navbar-right">  
+                            <li class="bordernone hovernone">
+								<div class="contactnumber">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<span> US and Canada:</span>1-800-780-5733
+								</div>
                             </li>
-                            <li class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages <span class="badge indent0">14</span><b class="lightcaret mt-2"></b></a>
-                                <ul class="dropdown-menu posright-0">
-                                    <li>
-                                        <div class="row dropwidth01">
-                                            <ul class="droplist col-md-4">
-                                                <li class="dropdown-header">Inner pages</li>
-                                                <li><a href="list.html">List page 1</a></li>
-                                                <li><a href="list2.html">List page 2</a></li>
-                                                <li><a href="list3.html">List page 3</a></li>
-                                                <li><a href="list4.html">List page 4</a></li>
-                                                <li><a href="details.html">Details page</a></li>
-                                                <li><a href="payment.html">Payment</a></li>
-                                                <li><a href="blog.html">Blog page</a></li>
-                                                <li><a href="blog-details.html">Blog details</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="profile.html">User Profile</a>  <span class="glyphicon glyphicon-star lblue"></span></li>
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="dashboard/index.html">Dashboard</a>  <span class="glyphicon glyphicon-star lblue"></span></li>
-
-
-                                            </ul>
-                                            <ul class="droplist col-md-4">
-                                                <li class="dropdown-header">Update - <span class="green">14 New Pages</span></li>
-                                                <li><a href="z-new-homepage.html">New Homepage</a>  <span class="glyphicon glyphicon-star lblue"></span></li>
-                                                <li><a href="z-flights-list.html">Flights list</a>  <span class="glyphicon glyphicon-star lblue"></span></li>
-                                                <li><a href="z-flights-payment.html">Flights payment</a></li>
-                                                <li><a href="z-cruise-list.html">Cruise list</a></li>
-                                                <li><a href="z-cruise-payment.html">Cruise payment</a></li>
-                                                <li><a href="z-rentacar-list.html">Rent a car list</a></li>
-                                                <li><a href="z-rentacar-details.html">Rent a car details</a></li>
-                                                <li><a href="z-rentacar-payment.html">Rent a car payment</a></li>
-                                                <li><a href="z-transfers-list.html">Transfers list</a></li>
-                                                <li><a href="z-transfers-payment.html">Transfers payment</a></li>
-                                                <li><a href="z-activities-list.html">Activities list</a></li>
-                                                <li><a href="z-activities-details.html">Activities details</a></li>
-                                                <li><a href="z-activities-payment.html">Activities payment</a></li>
-                                                <li><a href="z-wearesearching.html">Loading page</a></li>
-                                            </ul>
-                                            <ul class="droplist col-md-4">
-                                                <li class="dropdown-header">Bootstrap Shortcodes</li>
-                                                <li><a href="http://getbootstrap.com/components/" target="_blank">Components</a></li>
-                                                <li><a href="http://getbootstrap.com/javascript/" target="_blank">Javascript</a></li>
-                                                <li><a href="http://getbootstrap.com/css/" target="_blank">Css</a></li>
-                                                <li class="dropdown-header">Comming next</li>
-                                                <li class="inactive"><a href="#">More Home pages</a></li>
-                                                <li class="inactive"><a href="#">Elements</a></li>
-                                                <li class="inactive"><a href="#">...</a></li>
-                                                <li></li>
-                                                <li class="inactive size10 lgrey caps"><span class="glyphicon glyphicon-star "></span>Popular pages</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+							<li class="hovernone visible-lg visible-xs">
+								<div class="contactnumber">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<span>Europe:</span> 00-800-11-20-11-40	
+								</div>
                             </li>
+							<li class="currency">
+									<select data-placeholder="USD $ "  class="chosen-select" tabindex="17" id="single-label-example">
+									<option value=""></option>
+									<option>USD $ </option>
+									<option>EUR € </option>
+									<option>GBP £</option>
+									<option>AED AED</option>
+									<option>ARS ARS</option>
+									<option>AUD A$</option>
+									<option>BRL R$</option>
+									<option>CAD C$</option>
+									<option>CHF CHF</option>
+									<option>CLP CLP</option>
+									<option>CNY ¥</option>
+									<option>DKK kr</option>
+									<option>HKD HK$</option>
+									<option>IDR Rp</option>
+									<option>ILS ₪</option>
+								  </select>
+                            </li>
+							<li class="currency">
+									<select data-placeholder="English"  class="chosen-select " tabindex="17" id="single-label-example">
+									<option value=""></option>
+									<option> <img alt="" src="../content/images/it_flag.gif">Italiano </option>
+									<option> <img alt="" src="../content/images/de_flag.gif">Deutsch</option>
+									<option> <img alt="" src="../content/images/es_flag.gif">Español</option>
+									<option> <img alt="" src="../content/images/fr_flag.gif">Français</option>
+									<option> <img alt="" src="../content/images/nl_flag.gif">Nederlands</option>
+									<option> <img alt="" src="../content/images/no_flag.gif">Norsk</option>
+									<option> <img alt="" src="../content/images/sv_flag.gif">Svenska</option>
+									<option> <img alt="" src="../content/images/ja_flag.gif">日本語</option>
+									<option> <img alt="" src="../content/images/zh_flag.gif">中文</option>
+								</select>
+                            </li>
+							
+							
+							<li><a href="#">Manage Booking</a></li>
                         </ul>
                     </div>
                     <!-- /Navigation-->
-                </div>
             </div>
         </div>
     </div>
@@ -192,31 +163,43 @@
         - THEMEPUNCH BANNER -
     #################################
     -->
-    <div id="dajy" class="fullscreen-container2 mtslideb sliderbg fixed">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img alt="" src="Content/images/slide3.jpg">
+      <div class="carousel-caption">
         <div class="searchcontainer textcenter">
-            <span class="lato size48 slim white ">Where do you want to go?</span><br />
+            <h1 class="hero-strapline-title">Find a hotel room</h1>
+			<h2 class="hero-strapline-subtitle">over 240.000 hotels in 190 countries</h2>
             <div class="wh95percent center">
-                <div class='container'>
+
 					<div class='hero-search ht-search-box' data-type='search-form'>
 						<div class='row'>
+							<!--<div class='col-xs-2'>
+								<a href="\" class="navbar-brand">
+									<img src="Content/images/logo.png" alt="Hotels 7/24 Logo" class="logo" />
+								</a>
+							</div>-->
 							<div class='col-xs-12'>
-								<form action="/en/search-holiday-apartments" autocomplete="off" class="new_property_search" id="new_property_search" method="get">
+								<form action="/en/search-holiday-apartments" autocomplete="off" class="new_property_search hidden-xs" id="new_property_search" method="get">
 									<div class='ht-search-field'>
 										<div class='search-input' data-countries='Countries' data-districts='Districts' data-locations='Cities' data-regions='Regions' data-validation='Start typing to see the complete list'>
-											<input class="js-ie-sensitive text_field" id="property_search_destination_name" name="property_search[destination_name]" placeholder="e.g. Paris, London, Tuscany" size="30" type="text"/>
+											<input class="js-ie-sensitive text_field form-control" id="property_search_destination_name" name="property_search[destination_name]" placeholder="e.g. Paris, London, Tuscany" size="30" type="text"/>
 											<input id="property_search_destination_id" name="property_search[destination_id]" type="hidden" />
 											<ul class='destination-results'></ul>
 										</div>
 
 										<div class='search-button'>
 											<button class='btn searchButton' id='search_now'>
-												<img src="Content/images/search-btn.png" style="margin: -10px 0px 0px -2px;" />
+												<img src="Content/images/search-btn.png" />											
 											</button>
 										</div>
-										<div class='search-guests' style="margin-right: 40px;">
+										<div class='search-guests' style="margin-right:57px;">
 											<div id="themewrapper">
 												<div id="searchbox" style="width: 50px;" class="searchwidget NoCallcenter">
-													<form id="vSearch" name="vSearch" action="/site/index.php" onsubmit="return false;" autocorrect="off">
+													<form id="vSearch" name="vSearch" action="/site/index.php" onSubmit="return false;" autocorrect="off">
 														<input type="hidden" name="lg" value="en" />
 														<input type="hidden" name="geoid" value="" />
 														<input type="hidden" name="city_area" value="" />
@@ -227,22 +210,23 @@
 														<input type="hidden" name="rval" value="null" />
 														<input type="hidden" name="rgval" class="rgval" value="" />
 														<span class="searchbox-elem">
-															<div class="pr_val_textfield" style="margin: 1px 0px 0px -10px; position: absolute"></div>
+															<div class="pr_val_textfield" style="margin: -4px 0px 0px -10px; position: absolute"></div>
 
 															<!--<span id="searchbox_guests_rooms" class="sb-label">Rooms & Guests</span>-->
 															<div class="pr_val_container" style=" margin-left: -40px; margin-top: -15px;">
 																<!--<img src="Content/images/calculator.png" />-->
 																<input tabindex="4" class="pr_val_fake" name="pr_val_fake" type="text" value="" />
-																<div class="pr_val_PopupButton" style="width: 30px; height: 30px; margin-top: -16px; cursor: pointer;"></div>
+																<div class="pr_val_PopupButton"></div>
 																<div class="pr_val_modal" style="width: 465px">
+																	<div class="arrow" style="left: 101.883px;"></div>
 																	<div class="pr_val_modal_content">
 																		<div class="sw-rooms-list"></div>
 																		<div class="searchbox_modal_footer">
-																			<button class="button btn-grey sw_accept_modal" style="line-height:18px !important; color:#000 !important;">OK</button>
+																			<button class="button btn-grey sw_accept_modal">OK</button>
 																			<!-- <a class="closeOpenPopUp" href="#">Ok</a>-->
 																			<!--<input type="button" class="button btn-grey sw_accept_modal" value="Ok"/>-->
 																		</div>
-																		<div class="sw_close_modal"><span>&nbsp;</span></div>
+																		<div class="sw_close_modal"><span class="glyphicon glyphicon-remove"></span></div>
 																	</div>
 																</div>
 																<div class="sw_background_modal"></div>
@@ -256,172 +240,345 @@
 										<div class='ht-separator'></div>
 
 										<div class='search-calendar js-search-calendar' data-translations='{"calendar":{"days_of_week_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"months_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"inputs":{"nights":"{{= nights }} nights","night":"{{= nights }} night"},"clearNotice":"I don&apos;t know my dates yet"}'>
-											<div class='glyphicon ht-icon-calendar js-toggle'></div>
+											
+											<div class='glyphicon glyphicon-calendar js-toggle' id="mcal"></div>
 											<input class="start-date date-display js-start-date-to-show" id="date_picker_property_search_from_date_pretty" name="date_picker_property_search[from_date_pretty]" placeholder="Check in" type="text" value="" />
 											<input class="end-date date-display js-end-date-to-show" id="date_picker_property_search_end_date_pretty" name="date_picker_property_search[end_date_pretty]" placeholder="Check out" type="text" value="" />
 											<input class="js-start-date-to-submit" id="property_search_from_date" name="property_search[from_date]" type="hidden" />
 											<input class="js-end-date-to-submit" id="property_search_to_date" name="property_search[to_date]" type="hidden" />
-											<div class='js-remove-dates glyphicon ht-icon-remove'></div>
+											<div class='js-remove-dates glyphicon ht-icon-remove'> </div>
 											<span class='js-number-of-nights number-of-nights'>0 nights</span>
 											<div class='ht-loading-indicator'></div>
+											
+											
 										</div>
-										<div class='ht-separator' style="display: none;"></div>
+										<div class='ht-separator'></div>
 
 									</div>
 
 								</form>
+								<div class="container mt-130 z-index100 visible-xs">		
+		  <div class="row">
+			<div class="col-md-12">
+				<div class="bs-example bs-example-tabs cstyle04">
+				
+					<div class="tab-content2" id="myTabContent">
+						
+						
+						
+						<div id="hotel2" class="tab-pane">
+
+							<div class="col-md-4 pt-6">
+								<span class="opensans size18" >Where do you want to go?</span>
+								<input type="text" class="form-control" placeholder="Greece">
+							</div>
+
+							<div class="col-md-4">
+								<div class="w100percent">
+									<div class="wh100percent textleft">
+										<span class="opensans size13"><b>Check in date</b></span>
+										<input type="text" class="form-control mySelectCalendar" id="datepicker" placeholder="mm/dd/yyyy"/>
+									</div>
+								</div>
+                              </div>
+							<div class="col-md-4 checkoutdate">
+								<div class="w100percentlast">
+									<div class="wh100percent textleft right">
+										<span class="opensans size13"><b>Check out date</b></span>
+										<input type="text" class="form-control mySelectCalendar" id="datepicker2" placeholder="mm/dd/yyyy"/>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4">
+								<div class="room1" >
+									<div class="w100percent">
+										<div class="wh100percent textleft">
+											<span class="opensans size13"><b>ROOM 1</b></span><br/>
+											
+											<div class="addroom1 block"><a href="#room2" onClick="addroom2()" class="grey">+ Add room</a></div>
+										</div>
+									</div>
+
+									<div class="w100percentlast">	
+										<div class="wh100percent textleft right">
+											<div class="w100percent">
+												<div class="wh100percent textleft left">
+													<span class="opensans size13"><b>Adult</b></span>
+													<select class="form-control mySelectBoxClass">
+													  <option>1</option>
+													  <option selected>2</option>
+													  <option>3</option>
+													  <option>4</option>
+													  <option>5</option>
+													</select>
+												</div>
+											</div>							
+											<div class="w100percentlast">
+												<div class="wh100percent textleft right">
+												<span class="opensans size13"><b>Child</b></span>
+													<select class="form-control mySelectBoxClass">
+													  <option>0</option>
+													  <option selected>1</option>
+													  <option>2</option>
+													  <option>3</option>
+													  <option>4</option>
+													  <option>5</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="room2 none">
+									<div class="clearfix"></div><div class="line1"></div>
+									<div class="w100percent">
+										<div class="wh100percent textleft">
+											<span class="opensans size13"><b>ROOM 2</b></span><br/>
+											<div class="addroom2 block grey"><a href="#" onClick="addroom3()" class="grey">+ Add room</a> | <a href="#" onClick="removeroom2()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+										</div>
+									</div>
+
+									<div class="w100percentlast">	
+										<div class="wh100percent textleft right">
+											<div class="w100percent">
+												<div class="wh100percent textleft left">
+													<span class="opensans size13"><b>Adult</b></span>
+													<select class="form-control mySelectBoxClass">
+													  <option>1</option>
+													  <option>2</option>
+													  <option selected>3</option>
+													  <option>4</option>
+													  <option>5</option>
+													</select>
+												</div>
+											</div>							
+											<div class="w100percentlast">
+												<div class="wh100percent textleft right">
+												<span class="opensans size13"><b>Child</b></span>
+													<select class="form-control mySelectBoxClass">
+													  <option selected>0</option>
+													  <option>1</option>
+													  <option>2</option>
+													  <option>3</option>
+													  <option>4</option>
+													  <option>5</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>		
+
+								<div class="room3 none">
+									<div class="clearfix"></div><div class="line1"></div>
+									<div class="w100percent">
+										<div class="wh100percent textleft">
+											<span class="opensans size13"><b>ROOM 3</b></span><br/>
+											<div class="addroom3 block grey"><a href="#" onClick="addroom3()" class="grey">+ Add room</a> | <a href="#" onClick="removeroom3()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+										</div>
+									</div>
+
+									<div class="w100percentlast">	
+										<div class="wh100percent textleft right">
+											<div class="w100percent">
+												<div class="wh100percent textleft left">
+													<span class="opensans size13"><b>Adult</b></span>
+													<select class="form-control mySelectBoxClass">
+													  <option selected>1</option>
+													  <option>2</option>
+													  <option>3</option>
+													  <option>4</option>
+													  <option>5</option>
+													</select>
+												</div>
+											</div>							
+											<div class="w100percentlast">
+												<div class="wh100percent textleft right">
+												<span class="opensans size13"><b>Child</b></span>
+													<select class="form-control mySelectBoxClass">
+													  <option selected>0</option>
+													  <option>1</option>
+													  <option>2</option>
+													  <option>3</option>
+													  <option>4</option>
+													  <option>5</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						
+						</div>
+						<!--End of 2nd tab -->
+						<div class="searchbg2">
+						
+						<form action="list4.html">
+							<button type="submit" class="btn-search right mr30">OK</button>
+						</form>
+					</div>
+					</div>
+					
+					
+						
+				</div>
+			</div>
+			
+		  </div>
+		</div>
 							</div>
 						</div>
 					</div>
-				</div>
+
             </div>
         </div>
-        <div class="fullscreenbanner">
-            <ul>
-
-                <!-- papercut fade turnoff flyin slideright slideleft slideup slidedown-->
-                <!-- FADE -->
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
-                    <img src="Content/images/background.jpg" alt="" />
-                    <div class="tp-caption scrolleffect sft"
-                         data-x="center"
-                         data-y="120"
-                         data-speed="1000"
-                         data-start="800"
-                         data-easing="easeOutExpo">
-                    </div>
-                </li>
-
-                <!-- FADE -->
-               
-
-               
-            </ul>
-            <div class="tp-bannertimer none"></div>
-        </div>
+      </div>
     </div>
-    <!--
+    
+  </div>
+
+  
+</div>
+	
+	
+	<!--
     ##############################
      - ACTIVATE THE BANNER HERE -
     ##############################
     -->
-    <script type="text/javascript">
-        var tpj = jQuery;
-        tpj.noConflict();
-
-        tpj(document).ready(function () {
-
-            if (tpj.fn.cssOriginal != undefined)
-                tpj.fn.css = tpj.fn.cssOriginal;
-
-            tpj('.fullscreenbanner').revolution(
-                {
-                    delay: 9000,
-                    startwidth: 1170,
-                    startheight: 600,
-
-                    onHoverStop: "off",						// Stop Banner Timet at Hover on Slide on/off
-
-                    thumbWidth: 100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
-                    thumbHeight: 50,
-                    thumbAmount: 3,
-
-                    hideThumbs: 0,
-                    navigationType: "none",				// bullet, thumb, none
-                    navigationArrows: "none",				// nexttobullets, solo (old name verticalcentered), none
-
-                    navigationStyle: false,				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
-
-
-                    navigationHAlign: "left",				// Vertical Align top,center,bottom
-                    navigationVAlign: "bottom",					// Horizontal Align left,center,right
-                    navigationHOffset: 30,
-                    navigationVOffset: 30,
-
-                    soloArrowLeftHalign: "left",
-                    soloArrowLeftValign: "center",
-                    soloArrowLeftHOffset: 20,
-                    soloArrowLeftVOffset: 0,
-
-                    soloArrowRightHalign: "right",
-                    soloArrowRightValign: "center",
-                    soloArrowRightHOffset: 20,
-                    soloArrowRightVOffset: 0,
-
-                    touchenabled: "on",						// Enable Swipe Function : on/off
-
-
-                    stopAtSlide: -1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
-                    stopAfterLoops: -1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
-
-                    hideCaptionAtLimit: 0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
-                    hideAllCaptionAtLilmit: 0,				// Hide all The Captions if Width of Browser is less then this value
-                    hideSliderAtLimit: 0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
-
-
-                    fullWidth: "on",							// Same time only Enable FullScreen of FullWidth !!
-                    fullScreen: "off",						// Same time only Enable FullScreen of FullWidth !!
-
-
-                    shadow: 0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
-
-                });
-
-
-        });
-    </script>
+  
 
     <!-- WRAP -->
-    <div class="wrap cst03 bgfix">
+    <div class="wrap bgfix">
 		<div class="container cstyle06 topcontent">	
 			<div class="row anim2">
-			  <div class="col-md-3">
-				<h2>Today's Top<br>Deals</h2><br>
-				Start your search with a look at the best rates on our site. 
+			  <div class="col-md-12 text-left">
+              	<div class="wrapper">
+                    <h2>Today's Top Deals</h2>
+                    Start your search with a look at the best rates on our site.<br/> <br>
+                </div> 
 			  </div>
-			  <div class="col-md-9">
-				<!-- Carousel -->
-				<div class="wrapper">
-					<div class="list_carousel">
+			  <div class="col-md-12">
+              		<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title text-left">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <span class="glyphicon glyphicon-play"></span> Dubai
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <div class="list_carousel">
 						<div class="caroufredsel_wrapper" >
 								<ul id="foo">
 									<li>
-										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>							
+										</div>							
+									</li>
+									<li>
+										<a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>							
+										</div>
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>					
+										</div>
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>							
+										</div>							
+									</li>
+								</ul>
+						</div>
+						<div class="clearfix"></div>
+						<a href="#" class="prev" id="prev_btn" style="display: block;"><img alt="" src="Content/images/spacer.png"></a>
+						<a href="#" class="next" id="next_btn" style="display: block;"><img alt="" src="Content/images/spacer.png"></a>
+					</div>
+      </div>
+      <p class="text-left showhotels"><a href="#">Show Dubai Hotels</a></p>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title text-left">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+           Istanbul
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="list_carousel">
+						<div class="caroufredsel_wrapper" >
+								<ul id="foo2">
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
 										<div class="m1">
 											<h6 class="lh1 dark"><b>Dubai</b></h6>
 											<h6 class="lh1 green">Save up to 30%</h6>							
 										</div>							
 									</li>
 									<li>
-										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
 										<div class="m1">
 											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
 											<h6 class="lh1 green">Save up to 30%</h6>							
 										</div>
 									</li>
 									<li>
-										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
 										<div class="m1">
 											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
 											<h6 class="lh1 green">Save up to 30%</h6>							
 										</div>							
 									</li>
 									<li>
-										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
 										<div class="m1">
 											<h6 class="lh1 dark"><b>Dubai</b></h6>
 											<h6 class="lh1 green">Save up to 30%</h6>							
 										</div>							
 									</li>
 									<li>
-										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
 										<div class="m1">
 											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
 											<h6 class="lh1 green">Save up to 30%</h6>							
 										</div>
 									</li>
 									<li>
-										<a href="list4.html"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
 										<div class="m1">
 											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
 											<h6 class="lh1 green">Save up to 30%</h6>							
@@ -430,63 +587,134 @@
 								</ul>
 							</div>
 						<div class="clearfix"></div>
-						<a href="#" class="prev" id="prev_btn" style="display: block;"><img alt="" src="images/spacer.png"></a>
-						<a href="#" class="next" id="next_btn" style="display: block;"><img alt="" src="images/spacer.png"></a>
+						<a href="#" class="prev" id="prev_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
+						<a href="#" class="next" id="next_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
 					</div>
-				</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title text-left">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Antalya
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="list_carousel">
+						<div class="caroufredsel_wrapper" >
+								<ul id="foo3">
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Dubai</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+									<li>
+										<a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Dubai</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>
+									</li>
+									<li>
+										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+										<div class="m1">
+											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
+											<h6 class="lh1 green">Save up to 30%</h6>							
+										</div>							
+									</li>
+								</ul>
+							</div>
+						<div class="clearfix"></div>
+						<a href="#" class="prev" id="prev_btn4" style="display: block;"><img alt="" src="images/spacer.png"></a>
+						<a href="#" class="next" id="next_btn4" style="display: block;"><img alt="" src="images/spacer.png"></a>
+					</div>
+      </div>
+    </div>
+  </div>
+</div>
+				<!-- Carousel -->
+				
 			  </div>
 			</div>	
 			<hr class="featurette-divider2">
 			<div class="row anim3">
-			  <div class="col-md-3">
-				<h2>Featured<br>Offers</h2><br>
-				Start your search with a look at the best rates on our site. 
+			  <div class="col-md-12 text-left">
+              	<div class="wrapper">
+                    <h2>Top Destinations</h2>
+                    Start your search with a look at the best rates on our site. <br/> <br>
+                </div>
 			  </div>
-			  <div class="col-md-9">
+			  <div class="col-md-12">
 			  
 				<!-- Carousel -->
-				<div class="wrapper">
+				<!--<div class="wrapper">
 					<div class="list_carousel">		
 						<div class="caroufredsel_wrapper">
 							<ul id="foo2">
 							
 							
 							<li style="margin-right: 20px;">
-								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
 								<div class="m1">
 									<h6 class="lh1 dark"><b>Machu Picchu</b></h6>
 									<h6 class="lh1 green">Save up to 30%</h6>							
 								</div>	
 							</li>	
 							<li style="margin-right: 20px;">
-								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
 								<div class="m1">
 									<h6 class="lh1 dark"><b>South Africa Adventures</b></h6>
 									<h6 class="lh1 green">Save up to 30%</h6>							
 								</div>							
 							</li>
 							<li style="margin-right: 20px;">
-								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
 								<div class="m1">
 									<h6 class="lh1 dark"><b>Egipt</b></h6>
 									<h6 class="lh1 green">Save up to 30%</h6>							
 								</div>							
 							</li>
 							<li style="margin-right: 20px;">
-								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
 								<div class="m1">
 									<h6 class="lh1 dark"><b>Machu Picchu</b></h6>
 									<h6 class="lh1 green">Save up to 30%</h6>							
 								</div>	
 							</li>						
 						<li style="margin-right: 20px;">
-								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
 								<div class="m1">
 									<h6 class="lh1 dark"><b>South Africa Adventures</b></h6>
 									<h6 class="lh1 green">Save up to 30%</h6>							
 								</div>							
 							</li><li style="margin-right: 20px;">
-								<a href="list4.html"><img alt="" src="Content/images/thumb-africa.jpg"></a>
+								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
 								<div class="m1">
 									<h6 class="lh1 dark"><b>Egipt</b></h6>
 									<h6 class="lh1 green">Save up to 30%</h6>							
@@ -496,12 +724,29 @@
 						<a href="#" class="prev" id="prev_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
 						<a href="#" class="next" id="next_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
 					</div>
-				</div>
+				</div>-->
 			  </div>
 			</div>			
 		</div>
         <div>   
         <br/>
+        </div>
+		<div class="row clearfix bluediv">
+        	<div class="container">
+            	<div class="col-md-12 text-left">
+            		<h2>Lorem Ipsum</h2>
+                 </div>
+            	<div class="col-md-5">
+                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard<a href="#"> dummy text</a> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <a href="#">specimen book</a>. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
+                    <p>t is a long established fact that a reader will be distracted by the <a href="#">readable content</a> of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                </div>
+                <div class="col-md-5 col-md-offset-2 right_container">
+                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
+                    <button type="button" class="btn btn-lg">Lorem Ipsum is simply dummy text</button>
+                </div>
+            	
+                
+            </div>
         </div>
 
         <!-- FOOTER -->
@@ -512,10 +757,10 @@
 			<div class="col-md-3">
 				<span class="ftitleblack">Let's socialize</span>
 				<div class="scont">
-					<a class="social1b" href="#"><img alt="" src="Content/images/icon-facebook.png"></a>
-					<a class="social2b" href="#"><img alt="" src="Content/images/icon-twitter.png"></a>
-					<a class="social3b" href="#"><img alt="" src="Content/images/icon-gplus.png"></a>
-					<a class="social4b" href="#"><img alt="" src="Content/images/icon-youtube.png"></a>
+					<a class="social1b img" href="#"><img alt="" src="Content/images/icon-facebook.png"></a>
+					<a class="social2b img" href="#"><img alt="" src="Content/images/icon-twitter.png"></a>
+					<a class="social3b img" href="#"><img alt="" src="Content/images/icon-gplus.png"></a>
+					<a class="social4b img" href="#"><img alt="" src="Content/images/icon-youtube.png"></a>
 					<br><br><br>
 					<a href="#"><img alt="" src="Content/images/logosmal_old.png"></a><br>
 					<span class="grey2">&copy; 2013  |  <a href="#">Privacy Policy</a><br>
@@ -523,6 +768,12 @@
 					<br><br>
 					
 				</div>
+                <div class="hovernone visible-sm small" style="color:#999;">
+								<div class="contactnumber">
+									<span class="glyphicon glyphicon-earphone"></span>
+									<span>Europe:</span> 00-800-11-20-11-40	
+								</div>
+                            </div>
 			</div>
 			<!-- End of column 1-->
 			
@@ -569,6 +820,7 @@
 		
 			
 		</div>	
+        
 	</div>
     </div>
     <!-- END OF WRAP -->
@@ -576,21 +828,23 @@
     <!-- This page JS -->
     <script src="Content/js/js-new-homepage.js"></script>
     <!-- Custom functions -->
-    <script src="Content/js/functions.js"></script>
+   <!-- <script src="Content/js/functions.js"></script>-->
     <!-- Picker UI-->
+    
     <script src="Content/assets/jquery-ui/jquery-ui.js"></script>
     <!-- Easing -->
-    <script src="Content/assets/jquery/jquery.easing.js"></script>
+    <!--<script src="Content/assets/jquery/jquery.easing.js"></script>-->
     <!-- jQuery KenBurn Slider  -->
-    <script src="Content/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!--<script src="Content/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>-->
     <!-- Nicescroll  -->
-    <script src="Content/assets/jquery/jquery.nicescroll.min.js"></script>
+    <!--<script src="Content/assets/jquery/jquery.nicescroll.min.js"></script>-->
+	<script src="Content/chosen.jquery.js" type="text/javascript"></script>
     <!-- CarouFredSel -->
     <script src="Content/assets/jquery/jquery.carouFredSel-6.2.1-packed.js"></script>
-    <script src="Content/assets/jquery/helper-plugins/jquery.touchSwipe.min.js"></script>
-    <script src="Content/assets/jquery/helper-plugins/jquery.mousewheel.min.js"></script>
-    <script src="Content/assets/jquery/helper-plugins/jquery.transit.min.js"></script>
-    <script src="Content/assets/jquery/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+    <!--<script src="Content/assets/jquery/helper-plugins/jquery.touchSwipe.min.js"></script>-->
+    <!--/*<script src="Content/assets/jquery/helper-plugins/jquery.mousewheel.min.js"></script>*/-->
+    <!--<script src="Content/assets/jquery/helper-plugins/jquery.transit.min.js"></script>
+    <script src="Content/assets/jquery/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>-->
     <!-- Custom Select -->
     <script src="Content/assets/jquery/jquery.customSelect.js"></script>
 
@@ -613,8 +867,20 @@
                 model: new HouseTrip.Models.NavigationBar({ "path": "/en/v4/layout/navigation_bar" })
             });
         });
+	
     </script>
-
+	<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    };
+	 </script>
 </body>
 </html>
 
