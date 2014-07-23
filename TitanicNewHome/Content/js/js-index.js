@@ -7,87 +7,8 @@ jQuery(function() {
 });
 
 
-//------------------------------
-//Custom Select
-//------------------------------
-jQuery(document).ready(function(){
-	jQuery('.mySelectBoxClass').customSelect();
-
-	/* -OR- set a custom class name for the stylable element */
-	//jQuery('.mySelectBoxClass').customSelect({customClass:'mySelectBoxClass'});
-});
-
-function mySelectUpdate(){
-	setTimeout(function (){
-		jQuery('.mySelectBoxClass').trigger('update');
-	}, 200);
-}
-
-jQuery(window).resize(function() {
-	mySelectUpdate();
-});
 
 
-//------------------------------
-//CaroufredSell
-//------------------------------
-jQuery(document).ready(function(jQuery){
-
-	jQuery("#foo").carouFredSel({
-		width: "100%",
-		height: 240,
-		items: {
-			visible: 5,
-			minimum: 1,
-			start: 2
-		},
-		scroll: {
-			items: 1,
-			easing: "easeInOutQuad",
-			duration: 500,
-			pauseOnHover: true
-		},
-		auto: false,
-		prev: {
-			button: "#prev_btn",
-			key: "left"
-		},
-		next: {
-			button: "#next_btn",
-			key: "right"
-		},				
-		swipe: true
-	});
-	
-	
-	jQuery("#foo2").carouFredSel({
-		width: "100%",
-		height: 240,
-		items: {
-			visible: 5,
-			minimum: 1,
-			start: 2
-		},
-		scroll: {
-			items: 1,
-			easing: "easeInOutQuad",
-			duration: 500,
-			pauseOnHover: true
-		},
-		auto: false,				
-		prev: {
-			button: "#prev_btn2",
-			key: "left"
-		},
-		next: {
-			button: "#next_btn2",
-			key: "right"
-		},				
-		swipe: true
-	});
-	
-
-});
 
 
 
@@ -202,7 +123,7 @@ jQuery(window).scroll(function(){
 		
 		if(jQuery(window).scrollTop() != 0){
 			jQuery('.mtnav').stop().animate({top: '0px'}, 500);
-			jQuery('.logo').stop().animate({width: '115px'}, 100);
+			jQuery('.logo').stop().animate({width: '155px'}, 100);
 
 		}       
 		else {
@@ -213,7 +134,7 @@ jQuery(window).scroll(function(){
 			  }
 			
 			
-			jQuery('.logo').stop().animate({width: '120px'}, 100);		
+			jQuery('.logo').stop().animate({width: '160px'}, 100);		
 	
 		}
 		
