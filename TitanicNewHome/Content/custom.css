@@ -1,6 +1,17 @@
 #search_change {
     padding: 15px;
 }
+.hero-search .ht-search-field {
+width: 60%; position: relative; z-index: 500; height:46px;}
+
+.currentfocus{
+border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;}
+	
+	.currentremove{
+border-color: none;
+    }
 
 /* From Expedia */
 .module {
@@ -8,7 +19,9 @@ margin: 0 0 5px 0;
 padding: 0 10px;
 position: relative;
 }
-
+.hovernone{ background:none !important;}
+.hovernone:hover{ color:#000065 !important; opacity:1 !important;}
+.topcontent {padding-bottom: 3%;}
 .star-rating em{display:none;}.star-rating{background-image:url('images/star-rating.png');display:inline;float:left;height:14px;margin:2px 16px 6px 0;padding:0;width:74px;}.star1{background-position:0 -14px;}.star1-5{background-position:0 -28px;}.star2{background-position:0 -42px;}.star2-5{background-position:0 -56px;}.star3{background-position:0 -70px;}.star3-5{background-position:0 -84px;}.star4{background-position:0 -98px;}.star4-5{background-position:0 -112px;}.star5{background-position:0 -126px;}
 
 .tripadvisor-rating em{display:none;}.tripadvisor-rating{background-image:url('images/tp-rating.png');display:inline;float:left;height:16px;margin:0 6px 6px 0;overflow:hidden;text-indent:-9999px;width:85px;}.ta1{background-position:0 -15px;}.ta1-5{background-position:0 -30px;}.ta2{background-position:0 -45px;}.ta2-5{background-position:0 -61px;}.ta3{background-position:0 -75px;}.ta3-5{background-position:0 -90px;}.ta4{background-position:0 -105px;}.ta4-5{background-position:0 -120px;}.ta5{background-position:0 -135px;}
@@ -23,12 +36,11 @@ position: relative;
 body { font-weight: 400; }
 
 .navbar { margin-bottom: 0 !important; }
-.navbar-brand { padding: 12px 15px 12px 0 !important; }
+.navbar-brand{padding:10px 15px 4px 0 !important}
 .navbar-toggle .icon-bar { background: none repeat scroll 0 0 #222222; }
 
 .breadcrumb{ padding-left: 15px !important;padding-right: 15px !important; }
 
-a { color: #666; }
 
 .nav-tabs > li > a { color: #fff;border: none !important;border-radius: 0 !important;margin-right: 0 !important; }
 .nav-tabs > li > a:hover { border: 0px solid transparent; background: #ff9900; box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2); }
@@ -42,7 +54,7 @@ a { color: #666; }
     padding: 10px !important;
 }
 
-.nav > li.active > a { color: #ff9900; }
+.nav > li.active > a { color: #fff; }
 
 .nav.orange > li.active > a { color: #ff9900; }
 .nav.cyan > li.active > a { color: #4ea6a6; }
@@ -89,8 +101,9 @@ a { color: #666; }
 
 ul.droplist {
     list-style: none;
+	padding-left:0px;
 }
-
+    ul.droplist li  img{ margin:10px 5px 0px 0px; text-align:left; float:left;}
     ul.droplist li {
         line-height: 30px;
         border-bottom: 1px solid #efefef;
@@ -182,7 +195,37 @@ ul.droplist {
     position: relative;
     top: 0px;
 }
+@media (min-width:320px) and (max-width:767px) {
+.hero-search .ht-search-field {width: 88% !important;}
+.wh95percent {width: 100% !important;}
+.searchcontainer {top:10% !important; max-width: 100% !important;}
+.hero-search .ht-search-field {margin: 0px !important;}
+.footerbgblack .col-md-3{ margin-bottom:15px;}
+.navbar-collapse{ background:#777;}
+.navbar-collapse li, .navbar-collapse li a{ color:#fff!important;}
+.chosen-container-single .chosen-default{color: #fff!important;}
+.chosen-container-single .chosen-default:hover{ opacity:0.5;} 
+.navbar-collapse li:hover , .navbar-collapse li a:hover, .contactnumber:hover{ opacity:0.5!important;}
+.hero-strapline-title{ font-size:35px!important; line-height:35px!important; color:#000!important; text-shadow:none!important;}
+.hero-strapline-subtitle{ font-size:19px!important; line-height:25px!important; color:#000!important; text-shadow:none!important;}
+}
+@media (min-width:768px) and (max-width:979px) {
+.searchcontainer {max-width: 100% !important; top:10% !important; }
+.hero-search.calendar-opened .search-calendar {width: 41% !important; background:#fff;}
+.pr_val_modal {right: 221px !important;}
+.hero-search .ht-search-field {width: 95% !important;}
+.wh95percent {   width: 100% !important;}
+.datepickerContainer {right: 5%;}
+.datepicker { background:none !important; width:100% !important; border:none !important;}
+.hero-search .search-input {width: 100% !important; z-index:-1;}
+.hero-search .search-input input{ box-shadow: none;    width: 64% !important;}
 
+#datepicker_desktop {margin-left:12px !important;}
+.bgfix{margin-top:-54px;}
+hr{ margin-bottom:10px;}
+.topcontent{ margin-bottom:2%;}
+.img img{float: left; margin:0px 2px!important; width: 14%;}
+}
 @media (min-width: 992px) {
     .navbar-wrapper2 {
         min-height: 80px;
@@ -269,6 +312,7 @@ img.logo {
 
 .relative {
     position: relative;
+	margin-top:20px;
 }
 
 .absolute {
@@ -686,7 +730,7 @@ a:hover.green2 {
 .ftitleblack {
     font-family: "Open Sans";
     Font-size: 16px;
-    color: #b1b8b8;
+    color: #626669;
     font-weight: 700;
 }
 
@@ -835,8 +879,9 @@ a:hover.green2 {
 }
 
 .mt-130 {
-    position: relative;
+    position: static;
     top: -130px;
+	margin-bottom: 22px;
 }
 
 
@@ -1054,11 +1099,11 @@ img.imgpos1 {
 .searchbg2 {
     height: 62px;
     width: 100%;
-    position: absolute;
-    top: 301px;
+    position:relative;
+    top:10px;
     display: block;
-    background: #f7f7f7;
-    border-top: 1px solid #e8e8e8;
+    /*background: #f7f7f7;
+    border-top: 1px solid #e8e8e8*/;
     z-index: 100;
 }
 
@@ -1106,7 +1151,7 @@ img.imgpos1 {
   */
     text-transform: uppercase;
     margin-left: 30px;
-    margin-top: 12px;
+    margin-top: 6px;
     border: 1px solid #d75124;
     background: #e35121;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#e35121));
@@ -1720,11 +1765,10 @@ a:visited.booknow {
 
 .tab-content2 {
     background: #ffffff;
-    padding: 30px 15px 30px 15px;
-    height: 324px;
+    padding:10px 15px 21px;
+    min-height: 324px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .tab-content3 {
     background: #ffffff;
     padding: 30px;
@@ -2248,8 +2292,9 @@ a:visited.booknow {
 }
 
 #hotel2 {
-    height: 203px;
+    height:auto;
     overflow-x: hidden;
+	
 }
 
 #car2 {
@@ -2390,9 +2435,7 @@ a:visited.booknow {
     background: #fff!important;
 }
 
-.bgfix {
-    background: #f2f2f2!important;
-}
+.bgfix {}
 
 @media (min-width: 992px) {
 
@@ -2623,14 +2666,14 @@ img.dealthumb {
     height: 55px;
     float: left;
     margin-left: 10px;
-    background: #15262f;
+    background: #e65423;
     position: absolute;
     top: 60px;
     left: -10px;
 }
 
     .prev:hover {
-        background: #ffcc66;
+        background: #c63a0b;
     }
 
 a.prev img {
@@ -2654,14 +2697,14 @@ a:hover.prev img {
     height: 55px;
     float: right;
     margin-right: 10px;
-    background: #15262f;
+    background: #e65423;
     position: absolute;
     top: 60px;
     right: -11px;
 }
 
     .next:hover {
-        background: #ffcc66;
+        background: #c63a0b;
     }
 
 a.next img {
@@ -2775,10 +2818,10 @@ button:hover.next2 img {
 /*BLACK FOOTER*/
 .footerbgblack {
     width: 100%;
-    background: #15262f;
+    background: #f2f2f2;
     padding: 60px 0;
-    margin-top: 80px;
     overflow: hidden;
+	text-align:left;
 }
 
 .footerbg3black {
@@ -2873,6 +2916,7 @@ button:hover.next2 img {
     text-align: left;
     color: #999;
     font-size: 14px;
+	margin-top:20px;
 }
 
     .scont a {
@@ -4759,8 +4803,9 @@ ul.jslidetext2 {
 
 .cstyle04 {
     position: relative;
-    top: -41px;
+    top: 10px;
 }
+
 
 .cstyle05 {
     display: block;
