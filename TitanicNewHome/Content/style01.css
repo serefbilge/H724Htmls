@@ -1,3 +1,14 @@
+ 
+
+ @font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/proximanova-regular.eot');
+    src: url('../fonts/proximanova-regular.eot') format('embedded-opentype'),
+         url('../fonts/proximanova-regular.woff') format('woff'),
+         url('../fonts/proximanova-regular.ttf') format('truetype'),
+         url('../fonts/proximanova-regular.svg#ProximaNovaRegular') format('svg');
+}
+
 .darkblue{
 color:#003366;
 }
@@ -1069,14 +1080,14 @@ width:100% !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
+  width:405px;
   border: 1px solid #aaa;
   border-top: 0;
   background: #fff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
 }
 .chosen-container.chosen-with-drop .chosen-drop {
-  left: 0;
+  left:-108px;
 }
 .chosen-container a {
   cursor: pointer;
@@ -1084,20 +1095,23 @@ width:100% !important;
 li{ list-style:none;}
 
 .chosen-results li {
+	float:left;
+	width:33%;
     background: none repeat scroll 0 0 #fff;
-    border-bottom: 1px solid #d9d9d9;
-    color: #000065;
+    color: #000;
     line-height: 25px;
-    opacity: 0.8;
+	padding:4px 0px;
+	font-size:12px;
+   
 }
-.chosen-results li:hover{ color:#e65423; opacity: 0.9;}
+.chosen-results li:hover{ color:#e65423; background:#f2f2f2;}
 
 /* @end */
 /* @group Single Chosen */
 .chosen-container-single .chosen-single { float:left;}
-.chosen-container-single .chosen-single :hover{color:#e65423;}
+.chosen-container-single .chosen-single :hover{color:#000;}
 .chosen-container-single .chosen-default {
-  color: #000065;
+  color: #000;
 }
 .chosen-container-single .chosen-single span {
     float: left;
@@ -1127,24 +1141,37 @@ li{ list-style:none;}
 .chosen-container-single .chosen-single div { float:left;}
 
 .chosen-results{ text-align:center;padding:0px!important;}
-.currency{ padding:15px 12px !important; }
-.chosen-container-single .chosen-single div b {
+.currency ,.language{ padding:15px 12px !important; }
 
+.chosen-container-single .chosen-single div b {
+display:none;
 float:left;
   width: 10px;
   height: 16px;
   background: url('images/chosen-sprite.png') no-repeat 0px 2px;
 }
-.chosen-container-single .chosen-search {
-    background: none repeat scroll 0 0 #fff;
+.currency .chosen-container-single .chosen-search {
+    background:url(images/up_arrow_white.png) no-repeat  132px top #ccc;
+    /*background: none repeat scroll 0 0 #fff;*/
     margin: 0;
-    opacity: 0.8;
-    padding: 3px 4px;
+    opacity: 0.3;
+    padding: 6px 4px;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1010;
+}
+.language .chosen-container-single .chosen-search {
+    background:url(images/up_arrow_white.png) no-repeat  134px top #ccc;
+    /*background: none repeat scroll 0 0 #fff;*/
+    margin: 0;
+    opacity: 0.3;
+    padding: 6px 4px;
     position: relative;
     white-space: nowrap;
     z-index: 1010;
 }
 .chosen-container-single .chosen-search input[type="text"] {
+display:none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1170,7 +1197,7 @@ float:left;
   left: -9999px;
 }
 .checkoutdate{ z-index:99;}
-.hero-strapline-title, .hero-strapline-subtitle{font-family:'ProximaNova-Regular';}
+.hero-strapline-title, .hero-strapline-subtitle{ font-family: 'ProximaNovaRegular';}
 .hero-strapline-title {
     font-size: 48px;
     line-height: 48px;
@@ -1187,12 +1214,12 @@ float:left;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), 0 0 24px rgba(0, 0, 0, 0.8);
 }
 .hotelprice{ padding-right:10px;}
-.showhotels{ padding-left:10px;}
-.bluediv{ background:url(images/parisbgblue.jpg) 69% 40% #006699; color:#fff; padding:30px 0px;}
+.showhotels{ padding:10px;}
+.bluediv{ background:url(images/parisbgblue.jpg) 69% 40% #006699; min-height:500px; color:#fff; padding:60px 0px 30px;}
 .bluediv p{text-align:justify; line-height:22px;padding: 0 10px 0 0; margin:0px 0px 10px;}
-.bluediv p a{ color:#000;}
+.bluediv p a{color: #fff;  font-weight: bold;}
 .bluediv p a:hover{ color:#e65423;}
-.right_container .btn{ color:#fff; margin-top:20px; border:none;background: #f96230; /* Old browsers */
+.right_container .btn{ color:#fff;  margin-top:20px; border:none;background: #f96230; /* Old browsers */
 background: -moz-linear-gradient(top,  #f96230 0%, #f05a28 47%, #e75423 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f96230), color-stop(47%,#f05a28), color-stop(100%,#e75423)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  #f96230 0%,#f05a28 47%,#e75423 100%); /* Chrome10+,Safari5.1+ */
@@ -1202,4 +1229,25 @@ background: linear-gradient(to bottom,  #f96230 0%,#f05a28 47%,#e75423 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f96230', endColorstr='#e75423',GradientType=0 ); /* IE6-9 */
 }
 .right_container .btn:hover{ opacity:0.8;}
+.cityname h4{margin-left:5px;  border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px;}
+.gps_icon {
+    background: none repeat scroll 0 0 #fff;
+    float: right;
+    font-size: 19px;
+    line-height: 50px !important;
+    padding: 0 8px;
+	height: 44px;
+}
+.gps_icon a span{color:#e65423;}
+.gps_icon a span:hover{color:#817f7e;}
+.bestprice{ width:85%;}
+.best_price_gurantee{background:rgba(255, 255, 255, 0.8);margin:20px auto 0px; padding:10px 5px; width:150px; float:right; color:#000; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px;}
+.best_price_gurantee h3{margin:0px;font-size:20px; margin: 0; color:#e65423;}
+.best_price_gurantee h3 span{ float:left; height:25px;margin:10px 5px 0px 2px;}
+.best_price_gurantee h3 a{color:#e65423; letter-spacing:1px;}
+.best_price_gurantee h3 a:hover{color:#d93803;}
+.best_price_gurantee .searchbg2{ background:none; border:none; margin-top:30px;}
+.best_price_gurantee .form-control{ height:33px;}
+.best_price_gurantee .room1, .best_price_gurantee input, .best_price_gurantee .textleft { margin-top:20px;}
+
 /* @end */

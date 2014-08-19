@@ -218,7 +218,7 @@ html {
 body {
 	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:14px;
-	line-height:1.428571429;
+	/*line-height:1.428571429;*/
 	color:#333;
 	background-color:#fff
 }
@@ -566,7 +566,7 @@ pre code {
 }
 @media(min-width:768px) {
 .container {
-width:750px
+width:100%;
 }
 }
 @media(min-width:992px) {
@@ -579,10 +579,10 @@ width:970px
 width:1170px
 }
 }
-.row {
-	margin-right:-15px;
+/*.row {
+
 	margin-left:-15px
-}
+}*/
 .row:before, .row:after {
 	display:table;
 	content:" "
@@ -1678,6 +1678,9 @@ text-align:right
 	color:#333;
 	background-color:#fff;
 	border-color:#ccc
+}
+.open > .dropdown-menu {
+    display: block;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
 	color:#333;
@@ -2932,7 +2935,7 @@ border-top-left-radius:0
 }
 .nav>li>a:hover, .nav>li>a:focus {
 	text-decoration:none;
-	background-color:#eee
+	/*background-color:#eee*/
 }
 .nav>li.disabled>a {
 	color:#999
@@ -2944,7 +2947,7 @@ border-top-left-radius:0
 	background-color:transparent
 }
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-	background-color:#eee;
+	/*background-color:#eee;*/
 	border-color:#428bca
 }
 .nav .nav-divider {
@@ -2965,15 +2968,16 @@ border-top-left-radius:0
 }
 .nav-tabs>li>a {
 	margin-right:2px;
-	line-height:1.428571429;
+	line-height:30px;
 	border:1px solid transparent;
-	border-radius:4px 4px 0 0
+	border-radius:4px 4px 0 0;
+	
 }
 .nav-tabs>li>a:hover {
 	border-color:#eee #eee #ddd
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-	color:#555;
+	/*color:#999!important;*/
 	cursor:default;
 	background-color:#fff;
 	border:1px solid #ddd;
@@ -3157,7 +3161,7 @@ float:left
 	clear:both
 }
 .navbar-collapse.in {
-	overflow-y:auto
+	overflow-y:visible;
 }
 @media(min-width:768px) {
 .navbar-collapse {
@@ -3293,15 +3297,14 @@ margin:0
 }
  .navbar-nav>li {
 float:left;
-color: #000065;
+color: #000;
 border-right:1px solid #c7c4c4;
 }
 .bordernone{ border-right:none !important;}
  .navbar-nav>li:hover {
 float:left;
 color: #fb6331;
-background:#fff;
-opacity:0.7;
+
 }
 
  .navbar-nav>li>a {
@@ -3820,7 +3823,7 @@ font-size:63px
 	margin-bottom:20px;
 	line-height:1.428571429;
 	background-color:#fff;
-	border:1px solid #ddd;
+	border:1px solid #ddd!important;
 	border-radius:4px;
 -webkit-transition:all .2s ease-in-out;
 transition:all .2s ease-in-out
@@ -3833,7 +3836,7 @@ transition:all .2s ease-in-out
 	margin-left:auto
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-	border-color:#428bca
+	border-color:#ddd
 }
 .thumbnail .caption {
 	padding:9px;
@@ -4266,6 +4269,7 @@ a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .
 	border-bottom-color:#bce8f1
 }
 .well {
+	width:100%;
 	min-height:20px;
 	padding:19px;
 	margin-bottom:20px;
@@ -4652,13 +4656,14 @@ box-shadow:0 5px 15px rgba(0, 0, 0, 0.5)
 .carousel-inner {
 	position:relative;
 	width:100%;
-	overflow:hidden
+	overflow:inherit !important;
 }
 .carousel-inner>.item {
 	position:relative;
 	display:none;
 -webkit-transition:.6s ease-in-out left;
-transition:.6s ease-in-out left
+transition:.6s ease-in-out left;
+
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 	display:block;
@@ -4699,26 +4704,28 @@ transition:.6s ease-in-out left
 	left:0;
 	width:15%;
 	font-size:20px;
-	color:#fff;
+	color:#fff!important;
 	text-align:center;
-	text-shadow:0 1px 2px rgba(0, 0, 0, 0.6);
+	/*text-shadow:0 1px 2px rgba(0, 0, 0, 0.6);*/
 	opacity:.5;
 	filter:alpha(opacity=50)
 }
 .carousel-control.left {
-	background-image:-webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+	/*background-image:-webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
 	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
 	background-repeat:repeat-x;
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)*/
 }
 .carousel-control.right {
 	right:0;
 	left:auto;
-	background-image:-webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+	/*background-image:-webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
 	background-image:linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
 	background-repeat:repeat-x;
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)*/
 }
+.detailcarousel .carousel-control.right{ top:42%; line-height:30px;}
+.detailcarousel .carousel-control.left{ top:42%; line-height:30px;}
 .carousel-control:hover, .carousel-control:focus {
 	color:#fff;
 	text-decoration:none;
@@ -4783,7 +4790,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 .carousel-caption {
 	position:absolute;
 	right:15%;
-	top:40% !important;;
+	top:30% !important;
 	left:15%;
 	z-index:10;
 	padding-top:20px;
@@ -5046,6 +5053,7 @@ display:table-cell!important
 .visible-lg.visible-xs {
 display:block!important
 }
+
 table.visible-lg.visible-xs {
 display:table
 }
@@ -5055,11 +5063,12 @@ display:table-row!important
 th.visible-lg.visible-xs, td.visible-lg.visible-xs {
 display:table-cell!important;
 }
+.blacklable h4{ font-size:18px !important;}
 .carousel {top:0px;}
 #hotel2 .form-control{padding:6px 12px; z-index:9; margin:10px 0px;}
 .block{ margin:8px 0px;}
-.white { color:#000!important; font-size:23px!important;}
-.size13{ color:#000!important;}
+.white {  font-size:23px!important;}
+.size13{ color:#fff!important;}
 .footerbgblack{ padding:20px 0px!important; text-align:center!important;}
 .scont{ text-align:center!important;}
 .chosen-container-single .chosen-default{ position:absolute!important;}

@@ -425,6 +425,15 @@ website:   	http://www.themepunch.com
 						color:#fff !important; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6) !important; font-size:15px; line-height:45px !important;
 						background:url(../images/gradient/g30.png) repeat-x top; font-family: arial, sans-serif; font-weight: bold; letter-spacing: -1px;
 					}
+.searchbox_modal_footer .button{border:none; line-height:18px !important; background: #fb6331; /* Old browsers */
+background: -moz-linear-gradient(top,  #fb6331 0%, #f15b29 47%, #e65423 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fb6331), color-stop(47%,#f15b29), color-stop(100%,#e65423)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fb6331 0%,#f15b29 47%,#e65423 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fb6331 0%,#f15b29 47%,#e65423 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fb6331 0%,#f15b29 47%,#e65423 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fb6331 0%,#f15b29 47%,#e65423 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb6331', endColorstr='#e65423',GradientType=0 ); /* IE6-9 */
+}
 
 .button.big			{	color:#fff; text-shadow:0px 1px 1px rgba(0, 0, 0, 0.6); font-weight:bold; padding:9px 20px; font-size:19px;  line-height:57px !important; background:url(../images/gradient/g40.png) repeat-x top;}
 

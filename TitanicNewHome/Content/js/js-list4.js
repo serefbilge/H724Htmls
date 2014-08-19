@@ -187,7 +187,7 @@ jQuery(window).scroll(function(){
 	
 	if(jQuery(window).scrollTop() != 0){
 		jQuery('.mtnav').stop().animate({top: '0px'}, 500);
-		jQuery('.logo').stop().animate({width: '115px'}, 100);
+		jQuery('.logo').stop().animate({width: '155px'}, 100);
 	}       
 	else {
 		 if ( $iw < 992 ) {
@@ -196,7 +196,7 @@ jQuery(window).scroll(function(){
 		   jQuery('.mtnav').stop().animate({top: '10px'}, 500);
 		  }
 
-		jQuery('.logo').stop().animate({width: '120px'}, 100);		
+		jQuery('.logo').stop().animate({width: '160px'}, 100);		
 
 	}
 	

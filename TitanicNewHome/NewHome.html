@@ -1,65 +1,49 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotels 7/24</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotels 7/24</title>
+<!-- Bootstrap -->
+<link href="Content/assets/bootstrap3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+<link href="Content/custom.css" rel="stylesheet" />
+<link href="Content/style01.css" rel="stylesheet" />
 
-    <!-- Bootstrap -->
-    <link href="Content/assets/bootstrap3.0.3/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/custom.css" rel="stylesheet" />
-    <link href="Content/style01.css" rel="stylesheet" />
-	
-	<!-- Search box-->
-	<link href="Content/searchbox/main.css" rel="stylesheet" />
-    <script src="Content/searchbox/home_page_alljs_v.55.53132.js"></script>
-    <script src="Content/searchbox/home_page_searchbox_children_en_row.js"></script>
-    <link href="Content/searchbox/home_page_allcss_v.55.53132.css" rel="stylesheet" />
-	
-    
-
-	<!-- Search box end-->
-	
-	
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<!-- Search box-->
+<link href="Content/searchbox/main.css" rel="stylesheet" />
+<script src="Content/searchbox/home_page_alljs_v.55.53132.js"></script>
+<script src="Content/searchbox/home_page_searchbox_children_en_row.js"></script>
+<link href="Content/searchbox/home_page_allcss_v.55.53132.css" rel="stylesheet" />
+<!-- Search box end-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
         <script src="Content/assets/html5shiv.js"></script>
         <script src="Content/assets/respond.min.js"></script>
     <![endif]-->
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet' type='text/css'>
-    <!-- Font-Awesome -->
-	<link href="Content/assets/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- REVOLUTION BANNER CSS SETTINGS -->
-    <link href="Content/fullscreen.css" rel="stylesheet" />
-	<link href="Content/assets/rs-plugin/css/settings.css" rel="stylesheet" />
-    <!-- Picker UI-->
-    <link href="Content/assets/jquery-ui/jquery-ui.css" rel="stylesheet" />
-    
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet' type='text/css'>
+<!-- Font-Awesome -->
+<link href="Content/assets/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+<!-- REVOLUTION BANNER CSS SETTINGS -->
+<link href="Content/fullscreen.css" rel="stylesheet" />
+<link href="Content/assets/rs-plugin/css/settings.css" rel="stylesheet" />
+<!-- Picker UI-->
+<link href="Content/assets/jquery-ui/jquery-ui.css" rel="stylesheet" />
 <!-- jQuery -->
-    <script src="Content/assets/jquery/jquery.v2.0.3.js"></script>
-	<script src="Content/searchbox/main.js"></script>
-   
-	<!-- Masonry -->
-    <link href="Content/assets/Masonry/masonry.css" rel="stylesheet" />
-	<script>
+<script src="Content/assets/jquery/jquery.v2.0.3.js"></script>
+<script src="Content/searchbox/main.js"></script>
+
+<!-- Masonry -->
+<link href="Content/assets/Masonry/masonry.css" rel="stylesheet" />
+<script>
 	$(document).ready(function(){
 		$('#mcal').click(function(){
-		//alert('date click');
 			$('.pr_val_modal').hide();
-			//$('.datepicker_desktop').css("display: block");
 		});	
-	
-		//$('.glyphicon').click(function(){
-		//alert('man click');
-		//	$('.datepicker_desktop').css("display: none");
-			//$('.pr_val_modal').css("display: block");
-		//});	
-	
 	});
 	</script>
-    <script>
+<script>
         docReady(function () {
 
             var container = document.querySelector('.masonry');
@@ -79,778 +63,1550 @@
                 isActive = !isActive;
             });
 
-        });
+        }); 
     </script>
-	
-
+    
 </head>
 <body id="top">
-    <!-- Top wrapper -->
-    <div class="navbar-wrapper3 navbar-fixed-top2">
-        <div class="container">
-            <div class="navbar">
-                    <!-- Navigation-->
-                    <div class="navbar-header">
-                        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="\" class="navbar-brand">
-                            <img src="Content/images/logo.png" alt="Hotels 7/24 Logo" class="logo" />
-                        </a>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">  
-                            <li class="bordernone hovernone">
-								<div class="contactnumber">
-									<span class="glyphicon glyphicon-earphone"></span>
-									<span> US and Canada:</span>1-800-780-5733
-								</div>
-                            </li>
-							<li class="hovernone visible-lg visible-xs">
-								<div class="contactnumber">
-									<span class="glyphicon glyphicon-earphone"></span>
-									<span>Europe:</span> 00-800-11-20-11-40	
-								</div>
-                            </li>
-							<li class="currency">
-									<select data-placeholder="USD $ "  class="chosen-select" tabindex="17" id="single-label-example">
-									<option value=""></option>
-									<option>USD $ </option>
-									<option>EUR € </option>
-									<option>GBP £</option>
-									<option>AED AED</option>
-									<option>ARS ARS</option>
-									<option>AUD A$</option>
-									<option>BRL R$</option>
-									<option>CAD C$</option>
-									<option>CHF CHF</option>
-									<option>CLP CLP</option>
-									<option>CNY ¥</option>
-									<option>DKK kr</option>
-									<option>HKD HK$</option>
-									<option>IDR Rp</option>
-									<option>ILS ₪</option>
-								  </select>
-                            </li>
-							<li class="currency">
-									<select data-placeholder="English"  class="chosen-select " tabindex="17" id="single-label-example">
-									<option value=""></option>
-									<option> <img alt="" src="../content/images/it_flag.gif">Italiano </option>
-									<option> <img alt="" src="../content/images/de_flag.gif">Deutsch</option>
-									<option> <img alt="" src="../content/images/es_flag.gif">Español</option>
-									<option> <img alt="" src="../content/images/fr_flag.gif">Français</option>
-									<option> <img alt="" src="../content/images/nl_flag.gif">Nederlands</option>
-									<option> <img alt="" src="../content/images/no_flag.gif">Norsk</option>
-									<option> <img alt="" src="../content/images/sv_flag.gif">Svenska</option>
-									<option> <img alt="" src="../content/images/ja_flag.gif">日本語</option>
-									<option> <img alt="" src="../content/images/zh_flag.gif">中文</option>
-								</select>
-                            </li>
-							
-							
-							<li><a href="#">Manage Booking</a></li>
-                        </ul>
-                    </div>
-                    <!-- /Navigation-->
+<!-- Top wrapper -->
+<div class="navbar-wrapper3 navbar-fixed-top2">
+  <div class="container">
+    <div class="navbar">
+      <!-- Navigation-->
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="NewHome.html" class="navbar-brand"> <img src="Content/images/logo.png" alt="Hotels 7/24 Logo" class="logo" /> </a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="bordernone hovernone jointcontact visible-sm">
+            <div class="contactnumber">
+            	 <span class="glyphicon glyphicon-earphone"></span> <span> US and Canada:</span>1-800-780-5733 <br>
+                 	 <span>Europe:</span> 00-800-11-20-11-40
             </div>
-        </div>
+          </li>
+          <li class="bordernone hovernone hidden-sm">
+            <div class="contactnumber">
+            	 <span class="glyphicon glyphicon-earphone"></span> <span> US and Canada:</span>1-800-780-5733 
+            </div>
+          </li>
+          <li class="hovernone  hidden-sm">
+            <div class="contactnumber"> <span class="glyphicon glyphicon-earphone"></span> <span>Europe:</span> 00-800-11-20-11-40 </div>
+          </li>
+          <li class="currency">
+            <select data-placeholder="USD $ "  class="chosen-select" tabindex="17" id="single-label-example">
+              <option value=""></option>
+              <option>USD $ </option>
+              <option>EUR € </option>
+              <option>GBP £</option>
+              <option>AED AED</option>
+              <option>ARS ARS</option>
+              <option>AUD A$</option>
+              <option>BRL R$</option>
+              <option>CAD C$</option>
+              <option>CHF CHF</option>
+              <option>CLP CLP</option>
+              <option>CNY ¥</option>
+              <option>DKK kr</option>
+              <option>HKD HK$</option>
+              <option>IDR Rp</option>
+              <option>ILS ₪</option>
+            </select>
+          </li>
+          <li class="currency">
+            <select data-placeholder="English"  class="chosen-select " tabindex="17" id="single-label-example">
+              <option value=""></option>
+              <option> <img alt="" src="../content/images/it_flag.gif">Italiano </option>
+              <option> <img alt="" src="../content/images/de_flag.gif">Deutsch</option>
+              <option> <img alt="" src="../content/images/es_flag.gif">Español</option>
+              <option> <img alt="" src="../content/images/fr_flag.gif">Français</option>
+              <option> <img alt="" src="../content/images/nl_flag.gif">Nederlands</option>
+              <option> <img alt="" src="../content/images/no_flag.gif">Norsk</option>
+              <option> <img alt="" src="../content/images/sv_flag.gif">Svenska</option>
+              <option> <img alt="" src="../content/images/ja_flag.gif">日本語</option>
+              <option> <img alt="" src="../content/images/zh_flag.gif">中文</option>
+            </select>
+          </li>
+          <li><a href="#">Manage Booking</a></li>
+        </ul>
+      </div>
+      <!-- /Navigation-->
     </div>
-    <!-- /Top wrapper -->
-    <!--
+  </div>
+</div>
+<!-- /Top wrapper -->
+<!--
     #################################
         - THEMEPUNCH BANNER -
     #################################
     -->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active">
-      <img alt="" src="Content/images/slide3.jpg">
+    <div class="item active"> <img alt="" src="Content/images/slide3.jpg">
       <div class="carousel-caption">
         <div class="searchcontainer textcenter">
-            <h1 class="hero-strapline-title">Find a hotel room</h1>
-			<h2 class="hero-strapline-subtitle">over 240.000 hotels in 190 countries</h2>
-            <div class="wh95percent center">
-
-					<div class='hero-search ht-search-box' data-type='search-form'>
-						<div class='row'>
-							<!--<div class='col-xs-2'>
+          <h1 class="hero-strapline-title">Find a hotel room</h1>
+          <h2 class="hero-strapline-subtitle">over 240.000 hotels in 190 countries</h2>
+          <div class="wh95percent center">
+            <div class='hero-search ht-search-box' data-type='search-form'>
+             
+                <!--<div class='col-xs-2'>
 								<a href="\" class="navbar-brand">
 									<img src="Content/images/logo.png" alt="Hotels 7/24 Logo" class="logo" />
 								</a>
 							</div>-->
-							<div class='col-xs-12'>
-								<form action="/en/search-holiday-apartments" autocomplete="off" class="new_property_search hidden-xs" id="new_property_search" method="get">
-									<div class='ht-search-field'>
-										<div class='search-input' data-countries='Countries' data-districts='Districts' data-locations='Cities' data-regions='Regions' data-validation='Start typing to see the complete list'>
-											<input class="js-ie-sensitive text_field form-control" id="property_search_destination_name" name="property_search[destination_name]" placeholder="e.g. Paris, London, Tuscany" size="30" type="text"/>
-											<input id="property_search_destination_id" name="property_search[destination_id]" type="hidden" />
-											<ul class='destination-results'></ul>
-										</div>
-
-										<div class='search-button'>
-											<button class='btn searchButton' id='search_now'>
-												<img src="Content/images/search-btn.png" />											
-											</button>
-										</div>
-										<div class='search-guests' style="margin-right:57px;">
-											<div id="themewrapper">
-												<div id="searchbox" style="width: 50px;" class="searchwidget NoCallcenter">
-													<form id="vSearch" name="vSearch" action="/site/index.php" onSubmit="return false;" autocorrect="off">
-														<input type="hidden" name="lg" value="en" />
-														<input type="hidden" name="geoid" value="" />
-														<input type="hidden" name="city_area" value="" />
-														<input type="hidden" name="ac_text" value="" />
-														<strong id="sb-title"></strong>
-
-														<input type="hidden" name="pval" value="null" />
-														<input type="hidden" name="rval" value="null" />
-														<input type="hidden" name="rgval" class="rgval" value="" />
-														<span class="searchbox-elem">
-															<div class="pr_val_textfield" style="margin: -4px 0px 0px -10px; position: absolute"></div>
-
-															<!--<span id="searchbox_guests_rooms" class="sb-label">Rooms & Guests</span>-->
-															<div class="pr_val_container" style=" margin-left: -40px; margin-top: -15px;">
-																<!--<img src="Content/images/calculator.png" />-->
-																<input tabindex="4" class="pr_val_fake" name="pr_val_fake" type="text" value="" />
-																<div class="pr_val_PopupButton"></div>
-																<div class="pr_val_modal" style="width: 465px">
-																	<div class="arrow" style="left: 101.883px;"></div>
-																	<div class="pr_val_modal_content">
-																		<div class="sw-rooms-list"></div>
-																		<div class="searchbox_modal_footer">
-																			<button class="button btn-grey sw_accept_modal">OK</button>
-																			<!-- <a class="closeOpenPopUp" href="#">Ok</a>-->
-																			<!--<input type="button" class="button btn-grey sw_accept_modal" value="Ok"/>-->
-																		</div>
-																		<div class="sw_close_modal"><span class="glyphicon glyphicon-remove"></span></div>
-																	</div>
-																</div>
-																<div class="sw_background_modal"></div>
-
-															</div>
-														</span>
-													</form>
-												</div>
-											</div>
-										</div>
-										<div class='ht-separator'></div>
-
-										<div class='search-calendar js-search-calendar' data-translations='{"calendar":{"days_of_week_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"months_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"inputs":{"nights":"{{= nights }} nights","night":"{{= nights }} night"},"clearNotice":"I don&apos;t know my dates yet"}'>
-											
-											<div class='glyphicon glyphicon-calendar js-toggle' id="mcal"></div>
-											<input class="start-date date-display js-start-date-to-show" id="date_picker_property_search_from_date_pretty" name="date_picker_property_search[from_date_pretty]" placeholder="Check in" type="text" value="" />
-											<input class="end-date date-display js-end-date-to-show" id="date_picker_property_search_end_date_pretty" name="date_picker_property_search[end_date_pretty]" placeholder="Check out" type="text" value="" />
-											<input class="js-start-date-to-submit" id="property_search_from_date" name="property_search[from_date]" type="hidden" />
-											<input class="js-end-date-to-submit" id="property_search_to_date" name="property_search[to_date]" type="hidden" />
-											<div class='js-remove-dates glyphicon ht-icon-remove'> </div>
-											<span class='js-number-of-nights number-of-nights'>0 nights</span>
-											<div class='ht-loading-indicator'></div>
-											
-											
-										</div>
-										<div class='ht-separator'></div>
-
-									</div>
-
-								</form>
-								<div class="container mt-130 z-index100 visible-xs">		
-		  <div class="row">
-			<div class="col-md-12">
-				<div class="bs-example bs-example-tabs cstyle04">
-				
-					<div class="tab-content2" id="myTabContent">
-						
-						
-						
-						<div id="hotel2" class="tab-pane">
-
-							<div class="col-md-4 pt-6">
-								<span class="opensans size18" >Where do you want to go?</span>
-								<input type="text" class="form-control" placeholder="Greece">
-							</div>
-
-							<div class="col-md-4">
-								<div class="w100percent">
-									<div class="wh100percent textleft">
-										<span class="opensans size13"><b>Check in date</b></span>
-										<input type="text" class="form-control mySelectCalendar" id="datepicker" placeholder="mm/dd/yyyy"/>
-									</div>
-								</div>
-                              </div>
-							<div class="col-md-4 checkoutdate">
-								<div class="w100percentlast">
-									<div class="wh100percent textleft right">
-										<span class="opensans size13"><b>Check out date</b></span>
-										<input type="text" class="form-control mySelectCalendar" id="datepicker2" placeholder="mm/dd/yyyy"/>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-md-4">
-								<div class="room1" >
-									<div class="w100percent">
-										<div class="wh100percent textleft">
-											<span class="opensans size13"><b>ROOM 1</b></span><br/>
-											
-											<div class="addroom1 block"><a href="#room2" onClick="addroom2()" class="grey">+ Add room</a></div>
-										</div>
-									</div>
-
-									<div class="w100percentlast">	
-										<div class="wh100percent textleft right">
-											<div class="w100percent">
-												<div class="wh100percent textleft left">
-													<span class="opensans size13"><b>Adult</b></span>
-													<select class="form-control mySelectBoxClass">
-													  <option>1</option>
-													  <option selected>2</option>
-													  <option>3</option>
-													  <option>4</option>
-													  <option>5</option>
-													</select>
-												</div>
-											</div>							
-											<div class="w100percentlast">
-												<div class="wh100percent textleft right">
-												<span class="opensans size13"><b>Child</b></span>
-													<select class="form-control mySelectBoxClass">
-													  <option>0</option>
-													  <option selected>1</option>
-													  <option>2</option>
-													  <option>3</option>
-													  <option>4</option>
-													  <option>5</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="room2 none">
-									<div class="clearfix"></div><div class="line1"></div>
-									<div class="w100percent">
-										<div class="wh100percent textleft">
-											<span class="opensans size13"><b>ROOM 2</b></span><br/>
-											<div class="addroom2 block grey"><a href="#" onClick="addroom3()" class="grey">+ Add room</a> | <a href="#" onClick="removeroom2()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
-										</div>
-									</div>
-
-									<div class="w100percentlast">	
-										<div class="wh100percent textleft right">
-											<div class="w100percent">
-												<div class="wh100percent textleft left">
-													<span class="opensans size13"><b>Adult</b></span>
-													<select class="form-control mySelectBoxClass">
-													  <option>1</option>
-													  <option>2</option>
-													  <option selected>3</option>
-													  <option>4</option>
-													  <option>5</option>
-													</select>
-												</div>
-											</div>							
-											<div class="w100percentlast">
-												<div class="wh100percent textleft right">
-												<span class="opensans size13"><b>Child</b></span>
-													<select class="form-control mySelectBoxClass">
-													  <option selected>0</option>
-													  <option>1</option>
-													  <option>2</option>
-													  <option>3</option>
-													  <option>4</option>
-													  <option>5</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>		
-
-								<div class="room3 none">
-									<div class="clearfix"></div><div class="line1"></div>
-									<div class="w100percent">
-										<div class="wh100percent textleft">
-											<span class="opensans size13"><b>ROOM 3</b></span><br/>
-											<div class="addroom3 block grey"><a href="#" onClick="addroom3()" class="grey">+ Add room</a> | <a href="#" onClick="removeroom3()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
-										</div>
-									</div>
-
-									<div class="w100percentlast">	
-										<div class="wh100percent textleft right">
-											<div class="w100percent">
-												<div class="wh100percent textleft left">
-													<span class="opensans size13"><b>Adult</b></span>
-													<select class="form-control mySelectBoxClass">
-													  <option selected>1</option>
-													  <option>2</option>
-													  <option>3</option>
-													  <option>4</option>
-													  <option>5</option>
-													</select>
-												</div>
-											</div>							
-											<div class="w100percentlast">
-												<div class="wh100percent textleft right">
-												<span class="opensans size13"><b>Child</b></span>
-													<select class="form-control mySelectBoxClass">
-													  <option selected>0</option>
-													  <option>1</option>
-													  <option>2</option>
-													  <option>3</option>
-													  <option>4</option>
-													  <option>5</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						
-						</div>
-						<!--End of 2nd tab -->
-						<div class="searchbg2">
-						
-						<form action="list4.html">
-							<button type="submit" class="btn-search right mr30">OK</button>
-						</form>
-					</div>
-					</div>
-					
-					
-						
-				</div>
-			</div>
-			
-		  </div>
-		</div>
-							</div>
-						</div>
-					</div>
-
+                
+                  <form action="/en/search-holiday-apartments" autocomplete="off" class="new_property_search hidden-xs" id="new_property_search" method="get">
+                  <div class='ht-search-field'>
+                  <div class='search-input' data-countries='Countries' data-districts='Districts' data-locations='Cities' data-regions='Regions' data-validation='Start typing to see the complete list'>
+                    <input class="js-ie-sensitive text_field form-control" id="property_search_destination_name" name="property_search[destination_name]" placeholder="e.g. Paris, London, Tuscany" size="30" type="text"/>
+                    <input id="property_search_destination_id" name="property_search[destination_id]" type="hidden" />
+                    <ul class='destination-results'>
+                    </ul>
+                  </div>
+                  <div class='search-button'>
+                    <button class='btn searchButton' id='search_now'> <img src="Content/images/search-btn.png" /> </button>
+                  </div>
+                  <div class='search-guests' style="margin-right:40px;">
+                  <div id="themewrapper">
+                  <div id="searchbox" style="width: 50px;" class="searchwidget NoCallcenter">
+                  <form id="vSearch" name="vSearch" action="/site/index.php" onSubmit="return false;" autocorrect="off">
+                    <input type="hidden" name="lg" value="en" />
+                    <input type="hidden" name="geoid" value="" />
+                    <input type="hidden" name="city_area" value="" />
+                    <input type="hidden" name="ac_text" value="" />
+                    <strong id="sb-title"></strong>
+                    <input type="hidden" name="pval" value="null" />
+                    <input type="hidden" name="rval" value="null" />
+                    <input type="hidden" name="rgval" class="rgval" value="" />
+                    <span class="searchbox-elem">
+                    <div class="pr_val_textfield" style="margin: -4px 0px 0px -18px; position: absolute"></div>
+                    <!--<span id="searchbox_guests_rooms" class="sb-label">Rooms & Guests</span>-->
+                    <div class="pr_val_container" style=" margin-left: -40px; margin-top: -15px;">
+                      <!--<img src="Content/images/calculator.png" />-->
+                      <input tabindex="4" class="pr_val_fake" name="pr_val_fake" type="text" value="" />
+                      <div class="pr_val_PopupButton"></div>
+                      <div class="pr_val_modal" style="width: 465px">
+                        <div class="arrow" style="left: 101.883px;"></div>
+                        <div class="pr_val_modal_content">
+                          <div class="sw-rooms-list"></div>
+                          <div class="searchbox_modal_footer">
+                            <button class="button btn-grey sw_accept_modal">OK</button>
+                            <!-- <a class="closeOpenPopUp" href="#">Ok</a>-->
+                            <!--<input type="button" class="button btn-grey sw_accept_modal" value="Ok"/>-->
+                          </div>
+                          <div class="sw_close_modal"><span class="glyphicon glyphicon-remove"></span></div>
+                        </div>
+                      </div>
+                      <div class="sw_background_modal"></div>
+                    </div>
+                    </span>
+                  </form>
+                </div>
+              </div>
             </div>
-        </div>
-      </div>
-    </div>
+            <div class='ht-separator'></div>
+            <div class='search-calendar js-search-calendar' data-translations='{"calendar":{"days_of_week_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"months_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]},"inputs":{"nights":"{{= nights }} nights","night":"{{= nights }} night"},"clearNotice":"I don&apos;t know my dates yet"}'>
+              <div class='glyphicon glyphicon-calendar js-toggle' id="mcal"></div>
+              <input class="start-date date-display js-start-date-to-show" id="date_picker_property_search_from_date_pretty" name="date_picker_property_search[from_date_pretty]" placeholder="Check in" type="text" value="" />
+              <input class="end-date date-display js-end-date-to-show" id="date_picker_property_search_end_date_pretty" name="date_picker_property_search[end_date_pretty]" placeholder="Check out" type="text" value="" />
+              <input class="js-start-date-to-submit" id="property_search_from_date" name="property_search[from_date]" type="hidden" />
+              <input class="js-end-date-to-submit" id="property_search_to_date" name="property_search[to_date]" type="hidden" />
+              <div class='js-remove-dates glyphicon ht-icon-remove'> </div>
+              <span class='js-number-of-nights number-of-nights'>0 nights</span>
+              <div class='ht-loading-indicator'></div>
+            </div>
+            <div class='ht-separator'></div>
+            <div class="gps_icon"><a href="#"><span class="glyphicon glyphicon-map-marker"></span></a></div>
+          </div>
+          </form>
+          <div class="mt-130 z-index100 visible-xs">
+            
+                <div class="bs-example bs-example-tabs cstyle04">
+                  <div class="tab-content2" id="myTabContent">
+                    <div id="hotel2" class="tab-pane">
+                      <div class="col-md-4 pt-6">
+                        <input type="text" class="form-control searchbox" placeholder="Greece">
+                        <a href="#"><span class="glyphicon glyphicon-map-marker"></span></a>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="w100percent width50percent">
+                          <div class="wh100percent textleft"> <span class="opensans size13"><b>Check in date</b></span>
+                            <input type="text" class="form-control mySelectCalendar" id="datepicker" placeholder="mm/dd/yyyy"/>
+                          </div>
+                        </div>
+                     
+                        <div class="w100percentlast width50percent">
+                          <div class="wh100percent textleft right marginright6percent"> <span class="opensans size13"><b>Check out date</b></span>
+                            <input type="text" class="form-control mySelectCalendar" id="datepicker2" placeholder="mm/dd/yyyy"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="room1" >
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 1</b></span><br/>
+                              <div class="addroom1 block"><a href="#room2" onClick="addroom2()" class="grey">+ Add room</a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent  width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option>1</option>
+                                    <option selected>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast  width50percent">
+                                <div class="wh100percent textleft right marginright"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option>0</option>
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room2 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 2</b></span><br/>
+                              <div class="addroom2 block grey"><a href="javascript:void(0)" onClick="addroom3()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom2()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option selected>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right marginright"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room3 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 3</b></span><br/>
+                              <div class="addroom3 block grey"><a href="javascript:void(0)" onClick="addroom4()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom3()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room4 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 4</b></span><br/>
+                              <div class="addroom4 block grey"><a href="javascript:void(0)" onClick="addroom5()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom4()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room5 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 5</b></span><br/>
+                              <div class="addroom5 block grey"><a href="javascript:void(0)" onClick="addroom6()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom5()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div><div class="room6 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 6</b></span><br/>
+                              <div class="addroom6 block grey"><a href="javascript:void(0)" onClick="addroom7()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom6()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room7 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 7</b></span><br/>
+                              <div class="addroom7 block grey"><a href="javascript:void(0)" onClick="addroom8()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom7()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room8 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 8</b></span><br/>
+                              <div class="addroom8 block grey"><a href="javascript:void(0)" onClick="addroom9()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom7()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room9 none">
+                          <div class="clearfix"></div>
+                          <div class="line1"></div>
+                          <div class="w100percent width30percent">
+                            <div class="wh100percent textleft"> <span class="opensans size13"><b>ROOM 9</b></span><br/>
+                              <div class="addroom9 block grey"><a href="javascript:void(0)" onClick="addroom3()" class="grey">+ Add room</a> | <a href="javascript:void(0)" onClick="removeroom9()" class="orange"><img src="images/delete.png" alt="delete"/></a></div>
+                            </div>
+                          </div>
+                          <div class="w100percentlast width70percent">
+                            <div class="wh100percent textleft right">
+                              <div class="w100percent width50percent">
+                                <div class="wh100percent textleft left"> <span class="opensans size13"><b>Adult</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="w100percentlast width50percent">
+                                <div class="wh100percent textleft right"> <span class="opensans size13"><b>Child</b></span>
+                                  <select class="form-control mySelectBoxClass">
+                                    <option selected>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End of 2nd tab -->
+                    <div class="searchbg2">
+                      <form action="list4.html">
+                        <button type="submit" class="btn-search btn-lg mr30">SEARCH</button>
+                      </form>
+                    </div>
+                    <div class="clearfix"></div>
+                        <div class="bestprice">
+                          <div class="best_price_gurantee">
+                            <h3><a href="#"><span class="glyphicon glyphicon-ok"></span><strong> Best Price</strong> <br>Guarantee</a></h3>
+                          </div>
+                     </div>
+               
+                  </div>
+                </div>
+              
+          </div>
+       
     
+    </div>
+  </div>
+</div>
+
+  <div class="row hidden-xs">
+    <div class="col-md-12">
+    	<div class="bestprice">
+          <div class="best_price_gurantee">
+            <h3><a href="#"><span class="glyphicon glyphicon-ok"></span><strong> Best Price</strong> <br>Guarantee</a></h3>
+          </div>
+     </div>
+    </div>
   </div>
 
-  
 </div>
-	
-	
-	<!--
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="container cstyle07">	
+
+			  <div class="col-md-4">
+				<div class="boxshadow center">
+					
+					<div class="bscontainer">
+						<div class="ht-bullet-holder">
+							<div class="ht-bullet allworld">
+								<span class="glyphicon glyphicon-globe"></span>
+							</div>
+						</div>
+						<h4 class="lato bold caps">Hotels all over the world</h4>
+						<hr class="hidden-xs">
+						<p class="grey">Over 240.000 hotels in 190 countries </p>
+						
+					</div>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="boxshadow center">
+					
+					<div class="bscontainer">
+						<div class="ht-bullet-holder">
+							<div class="ht-bullet Lowestint">
+								<span class="glyphicon glyphicon-globe"></span>
+							</div>
+						</div>
+						<h4 class="lato bold caps">Lowest internet rates</h4>
+						<hr class="hidden-xs">
+						<p class="grey">Book with us, we will match the price</p>
+                        <a href="#">Learn More</a>
+						
+					</div>
+				</div>
+			  </div>
+			  <div class="col-md-4">
+				<div class="boxshadow center">
+						
+					<div class="bscontainer">
+						<div class="ht-bullet-holder">
+							<div class="ht-bullet booknowp">
+								<span class="glyphicon glyphicon-ok"></span>
+							</div>
+						</div>
+						<h4 class="lato bold caps">Book now, pay when you stay</h4>
+						<hr class="hidden-xs">
+						<p class="grey">We never charge a change or cancel fee </p>
+						
+					</div>
+				</div>
+			  </div>		  
+			  
+		
+		</div>
+<!--
     ##############################
      - ACTIVATE THE BANNER HERE -
     ##############################
     -->
-  
+<!-- WRAP -->
+				<div class="row bottomslider">
+						<div class="col-md-12 scolright">
+							<div class="fullwidthbanner">
+								<ul>
+									<!-- FADE -->
+									<li data-transition="fade" data-slotamount="1" data-masterspeed="300"> 										
+										<img src="images/slider/rome.jpg" alt=""/>
+										<div class="tp-caption scrolleffect sft"
+											 data-x="center"
+											 data-y="100"
+											 data-speed="1000"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >
+											 <div class="sboxpurple textcenter">
+												<span class="lato size28 slim caps white">Italy</span><br/><br/><br/>
+												<span class="lato size100 slim caps white">Rome</span><br/>
+												<span class="lato size20 normal caps white">from</span><br/><br/>
+												<span class="lato size48 slim uppercase yellow">$1500</span><br/>
+											 </div>
+										</div>	
+										<div class="tp-caption sfb"
+											 data-x="left"
+											 data-y="371"
+											 data-speed="1000"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >
+											<div class="blacklable">
+											<h4 class="lato bold white">Rome from <span class="green">$1.500</span> per week</h4>
+											<h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+											</div>
+										</div>	
+									</li>	
 
-    <!-- WRAP -->
-    <div class="wrap bgfix">
-		<div class="container cstyle06 topcontent">	
-			<div class="row anim2">
-			  <div class="col-md-12 text-left">
-              	<div class="wrapper">
-                    <h2>Today's Top Deals</h2>
-                    Start your search with a look at the best rates on our site.<br/> <br>
-                </div> 
-			  </div>
-			  <div class="col-md-12">
-              		<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title text-left">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          <span class="glyphicon glyphicon-play"></span> Dubai
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        <div class="list_carousel">
-						<div class="caroufredsel_wrapper" >
-								<ul id="foo">
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
-											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>							
-										</div>							
-									</li>
-									<li>
-										<a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
-											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>							
-										</div>
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
-											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>							
-										</div>							
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
-											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>							
-										</div>							
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
-											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>					
-										</div>
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
-											<h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>							
-										</div>							
-									</li>
+									<!-- FADE -->
+									<li data-transition="fade" data-slotamount="1" data-masterspeed="300"> 										
+										
+										<img src="images/slider/paris.jpg" alt=""/>
+										<div class="tp-caption scrolleffect sft"
+											 data-x="center"
+											 data-y="100"
+											 data-speed="1000"
+											 data-start="800"
+											 data-easing="easeOutExpo"  >
+											 <div class="sboxpurple textcenter">
+												<span class="lato size28 slim caps white">France</span><br/><br/><br/>
+												<span class="lato size100 slim caps white">Paris</span><br/>
+												<span class="lato size20 normal caps white">from</span><br/><br/>
+												<span class="lato size48 slim uppercase yellow">$1500</span><br/>
+											 </div>
+										</div>	
+										<div class="tp-caption sfb"
+											 data-x="left"
+											 data-y="371"
+											 data-speed="1000"
+											 data-start="800"
+											 data-easing="easeOutExpo" >
+											<div class="blacklable">
+											<h4 class="lato bold white">Paris from <span class="green">$1.500</span> per week</h4>
+											<h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+											</div>
+										</div>	
+									</li>	
+									
+									<!-- FADE -->	
 								</ul>
-						</div>
-						<div class="clearfix"></div>
-						<a href="#" class="prev" id="prev_btn" style="display: block;"><img alt="" src="Content/images/spacer.png"></a>
-						<a href="#" class="next" id="next_btn" style="display: block;"><img alt="" src="Content/images/spacer.png"></a>
-					</div>
-      </div>
-      <p class="text-left showhotels"><a href="#">Show Dubai Hotels</a></p>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title text-left">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-           Istanbul
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        <div class="list_carousel">
-						<div class="caroufredsel_wrapper" >
-								<ul id="foo2">
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Dubai</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-									<li>
-										<a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Dubai</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-								</ul>
+								<div class="tp-bannertimer none"></div>
 							</div>
-						<div class="clearfix"></div>
-						<a href="#" class="prev" id="prev_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
-						<a href="#" class="next" id="next_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
-					</div>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title text-left">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Antalya
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <div class="list_carousel">
-						<div class="caroufredsel_wrapper" >
-								<ul id="foo3">
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Dubai</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-									<li>
-										<a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Dubai</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Visit the Hawaii Beaches</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>
-									</li>
-									<li>
-										<a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
-										<div class="m1">
-											<h6 class="lh1 dark"><b>Santorini - Greece</b></h6>
-											<h6 class="lh1 green">Save up to 30%</h6>							
-										</div>							
-									</li>
-								</ul>
-							</div>
-						<div class="clearfix"></div>
-						<a href="#" class="prev" id="prev_btn4" style="display: block;"><img alt="" src="images/spacer.png"></a>
-						<a href="#" class="next" id="next_btn4" style="display: block;"><img alt="" src="images/spacer.png"></a>
-					</div>
-      </div>
-    </div>
-  </div>
-</div>
-				<!-- Carousel -->
-				
-			  </div>
-			</div>	
-			<hr class="featurette-divider2">
-			<div class="row anim3">
-			  <div class="col-md-12 text-left">
-              	<div class="wrapper">
-                    <h2>Top Destinations</h2>
-                    Start your search with a look at the best rates on our site. <br/> <br>
-                </div>
-			  </div>
-			  <div class="col-md-12">
-			  
-				<!-- Carousel -->
-				<!--<div class="wrapper">
-					<div class="list_carousel">		
-						<div class="caroufredsel_wrapper">
-							<ul id="foo2">
-							
-							
-							<li style="margin-right: 20px;">
-								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
-								<div class="m1">
-									<h6 class="lh1 dark"><b>Machu Picchu</b></h6>
-									<h6 class="lh1 green">Save up to 30%</h6>							
-								</div>	
-							</li>	
-							<li style="margin-right: 20px;">
-								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
-								<div class="m1">
-									<h6 class="lh1 dark"><b>South Africa Adventures</b></h6>
-									<h6 class="lh1 green">Save up to 30%</h6>							
-								</div>							
-							</li>
-							<li style="margin-right: 20px;">
-								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
-								<div class="m1">
-									<h6 class="lh1 dark"><b>Egipt</b></h6>
-									<h6 class="lh1 green">Save up to 30%</h6>							
-								</div>							
-							</li>
-							<li style="margin-right: 20px;">
-								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
-								<div class="m1">
-									<h6 class="lh1 dark"><b>Machu Picchu</b></h6>
-									<h6 class="lh1 green">Save up to 30%</h6>							
-								</div>	
-							</li>						
-						<li style="margin-right: 20px;">
-								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
-								<div class="m1">
-									<h6 class="lh1 dark"><b>South Africa Adventures</b></h6>
-									<h6 class="lh1 green">Save up to 30%</h6>							
-								</div>							
-							</li><li style="margin-right: 20px;">
-								<a href="#"><img alt="" src="Content/images/thumb-africa.jpg"></a>
-								<div class="m1">
-									<h6 class="lh1 dark"><b>Egipt</b></h6>
-									<h6 class="lh1 green">Save up to 30%</h6>							
-								</div>							
-							</li></ul></div>
-						<div class="clearfix"></div>
-						<a href="#" class="prev" id="prev_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
-						<a href="#" class="next" id="next_btn2" style="display: block;"><img alt="" src="images/spacer.png"></a>
-					</div>
-				</div>-->
-			  </div>
-			</div>			
-		</div>
-        <div>   
-        <br/>
-        </div>
-		<div class="row clearfix bluediv">
-        	<div class="container">
-            	<div class="col-md-12 text-left">
-            		<h2>Lorem Ipsum</h2>
-                 </div>
-            	<div class="col-md-5">
-                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard<a href="#"> dummy text</a> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <a href="#">specimen book</a>. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
-                    <p>t is a long established fact that a reader will be distracted by the <a href="#">readable content</a> of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-                <div class="col-md-5 col-md-offset-2 right_container">
-                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
-                    <button type="button" class="btn btn-lg">Lorem Ipsum is simply dummy text</button>
-                </div>
-            	
-                
-            </div>
-        </div>
+						
+						<!--
+						##############################
+						 - ACTIVATE THE BANNER HERE -
+						##############################
+						-->
+						<script type="text/javascript">
 
-        <!-- FOOTER -->
+							var tpj=jQuery;
+							tpj.noConflict();
 
-        <div class="footerbgblack">
-		<div class="container">		
-			
-			<div class="col-md-3">
-				<span class="ftitleblack">Let's socialize</span>
-				<div class="scont">
-					<a class="social1b img" href="#"><img alt="" src="Content/images/icon-facebook.png"></a>
-					<a class="social2b img" href="#"><img alt="" src="Content/images/icon-twitter.png"></a>
-					<a class="social3b img" href="#"><img alt="" src="Content/images/icon-gplus.png"></a>
-					<a class="social4b img" href="#"><img alt="" src="Content/images/icon-youtube.png"></a>
-					<br><br><br>
-					<a href="#"><img alt="" src="Content/images/logosmal_old.png"></a><br>
-					<span class="grey2">&copy; 2013  |  <a href="#">Privacy Policy</a><br>
-					All Rights Reserved </span>
-					<br><br>
+							tpj(document).ready(function() {
+
+							if (tpj.fn.cssOriginal!=undefined)
+								tpj.fn.css = tpj.fn.cssOriginal;
+
+								var api = tpj('.fullwidthbanner').revolution(
+									{
+										delay:9000,
+										startwidth:960,
+										startheight:446,
+
+										onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+
+										thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+										thumbHeight:50,
+										thumbAmount:3,
+
+										hideThumbs:0,
+										navigationType:"bullet",				// bullet, thumb, none
+										navigationArrows:"solo",				// nexttobullets, solo (old name verticalcentered), none
+
+										navigationStyle:"round",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+										navigationHAlign:"right",				// Vertical Align top,center,bottom
+										navigationVAlign:"bottom",					// Horizontal Align left,center,right
+										navigationHOffset:30,
+										navigationVOffset:30,
+
+										soloArrowLeftHalign:"left",
+										soloArrowLeftValign:"center",
+										soloArrowLeftHOffset:20,
+										soloArrowLeftVOffset:0,
+
+										soloArrowRightHalign:"right",
+										soloArrowRightValign:"center",
+										soloArrowRightHOffset:20,
+										soloArrowRightVOffset:0,
+
+										touchenabled:"on",						// Enable Swipe Function : on/off
+
+
+										stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+										stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+										hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+										hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+										hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+
+										fullWidth:"on",
+
+										shadow:1								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+
+									});
+
+									
+									
+									
+									
+
+									// TO HIDE THE ARROWS SEPERATLY FROM THE BULLETS, SOME TRICK HERE:
+									// YOU CAN REMOVE IT FROM HERE TILL THE END OF THIS SECTION IF YOU DONT NEED THIS !
+										api.bind("revolution.slide.onloaded",function (e) {
+
+
+											jQuery('.tparrows').each(function() {
+												var arrows=jQuery(this);
+
+												var timer = setInterval(function() {
+
+													if (arrows.css('opacity') == 1 && !jQuery('.tp-simpleresponsive').hasClass("mouseisover"))
+													  arrows.fadeOut(300);
+												},3000);
+											})
+
+											jQuery('.tp-simpleresponsive, .tparrows').hover(function() {
+												jQuery('.tp-simpleresponsive').addClass("mouseisover");
+												jQuery('body').find('.tparrows').each(function() {
+													jQuery(this).fadeIn(300);
+												});
+											}, function() {
+												if (!jQuery(this).hasClass("tparrows"))
+													jQuery('.tp-simpleresponsive').removeClass("mouseisover");
+											})
+										});
+									// END OF THE SECTION, HIDE MY ARROWS SEPERATLY FROM THE BULLETS
+
+						});
+						
+						
+						
+						
+						jQuery(document).ready(function($){
+							// gets the width of black bar at the bottom of the slider
+							var $gwsr = $('.scolright').outerWidth();
+							$('.blacklable').css({'width' : $gwsr +'px'});
+						});
+						jQuery(window).resize(function() {
+							jQuery(document).ready(function($){
+
+								// gets the width of black bar at the bottom of the slider
+								var $gwsr = $('.scolright').outerWidth();
+								$('.blacklable').css({'width' : $gwsr +'px'});
+
+							});
+						});
+						
+						
+
+
+
+
+						</script>
 					
-				</div>
-                <div class="hovernone visible-sm small" style="color:#999;">
-								<div class="contactnumber">
-									<span class="glyphicon glyphicon-earphone"></span>
-									<span>Europe:</span> 00-800-11-20-11-40	
-								</div>
-                            </div>
-			</div>
-			<!-- End of column 1-->
-			
-			<div class="col-md-3">
-				<span class="ftitleblack">Travel Specialists</span>
-				<br><br>
-				<ul class="footerlistblack">
-					<li><a href="#">Golf Vacations</a></li>
-					<li><a href="#">Ski &amp; Snowboarding</a></li>
-					<li><a href="#">Disney Parks Vacations</a></li>
-					<li><a href="#">Disneyland Vacations</a></li>
-					<li><a href="#">Disney World Vacations</a></li>
-					<li><a href="#">Vacations As Advertised</a></li>
-				</ul>
-			</div>
-			<!-- End of column 2-->		
-			
-			<div class="col-md-3">
-				<span class="ftitleblack">Travel Specialists</span>
-				<br><br>
-				<ul class="footerlistblack">
-					<li><a href="#">Weddings</a></li>
-					<li><a href="#">Accessible Travel</a></li>
-					<li><a href="#">Disney Parks</a></li>
-					<li><a href="#">Cruises</a></li>
-					<li><a href="#">Round the World</a></li>
-					<li><a href="#">First Class Flights</a></li>
-				</ul>				
-			</div>
-			<!-- End of column 3-->		
-			
-			<div class="col-md-3 grey">
-				<span class="ftitleblack">Newsletter</span>
-				<div class="relative">
-					<input type="email" placeholder="Enter email" id="exampleInputEmail1" class="form-control fccustom2black">
-					<button class="btn btn-default btncustom" type="submit">Submit<img alt="" src="Content/images/arrow.png"></button>
-				</div>
-				<br><br>
-				<span class="ftitleblack">Customer support</span><br>
-				<span class="pnr">1-866-599-6674</span><br>
-				<span class="grey2">office@travel.com</span>
-			</div>			
-			<!-- End of column 4-->			
-		
-			
-		</div>	
-        
-	</div>
-    </div>
-    <!-- END OF WRAP -->
-    <!-- Javascript -->
-    <!-- This page JS -->
-    <script src="Content/js/js-new-homepage.js"></script>
-    <!-- Custom functions -->
-   <!-- <script src="Content/js/functions.js"></script>-->
-    <!-- Picker UI-->
-    
-    <script src="Content/assets/jquery-ui/jquery-ui.js"></script>
-    <!-- Easing -->
-    <!--<script src="Content/assets/jquery/jquery.easing.js"></script>-->
-    <!-- jQuery KenBurn Slider  -->
-    <!--<script src="Content/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>-->
-    <!-- Nicescroll  -->
-    <!--<script src="Content/assets/jquery/jquery.nicescroll.min.js"></script>-->
-	<script src="Content/chosen.jquery.js" type="text/javascript"></script>
-    <!-- CarouFredSel -->
-    <script src="Content/assets/jquery/jquery.carouFredSel-6.2.1-packed.js"></script>
-    <!--<script src="Content/assets/jquery/helper-plugins/jquery.touchSwipe.min.js"></script>-->
-    <!--/*<script src="Content/assets/jquery/helper-plugins/jquery.mousewheel.min.js"></script>*/-->
-    <!--<script src="Content/assets/jquery/helper-plugins/jquery.transit.min.js"></script>
-    <script src="Content/assets/jquery/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>-->
-    <!-- Custom Select -->
-    <script src="Content/assets/jquery/jquery.customSelect.js"></script>
+					
+						</div>			
+					
+					</div><!-- end of row -->
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="Content/assets/bootstrap3.0.3/js/bootstrap.min.js"></script>
- <script type='text/javascript'>
+
+
+<div class="wrap bgfix">
+  <div class="container cstyle06 topcontent">
+    <div class="row anim2">
+      <div class="col-md-12">
+        <div class="wrapper">
+          <h2>Today's Top Deals</h2>
+        </div>
+      </div>
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Dubai </a> </h4>
+        <!-- Carousel 1 start -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Dubai Hotels</a></p>
+      </div>
+      <!-- Carousel 1 end -->
+      <!-- Carousel 2 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Istanbul </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo2">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn2" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn2" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Istanbul Hotels</a></p>
+      </div>
+      <!-- Carousel 2 end -->
+      <!-- Carousel 3 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Las Vegas </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo3">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn3" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn3" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Las Vegas Hotels</a></p>
+      </div>
+      <!-- Carousel 3 end -->
+      <!-- Carousel 4 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Antalya </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo4">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn4" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn4" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Antalya Hotels</a></p>
+      </div>
+      <!-- Carousel 4 end -->
+      <!-- Carousel 5 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Maldives </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo5">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn5" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn5" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Maldives Hotels</a></p>
+      </div>
+      <!-- Carousel 5 end -->
+      <!-- Carousel 6 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Kiev </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo6">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn5" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn5" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Kiev Hotels</a></p>
+      </div>
+      <!-- Carousel 6 end -->
+    </div>
+    <hr class="featurette-divider2">
+    <div class="row anim3">
+      <div class="col-md-12">
+        <div class="wrapper">
+          <h2>Top Destinations</h2>
+        </div>
+      </div>
+      <!-- Carousel 7 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Dubai </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo7">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn7" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn7" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Dubai Hotels</a></p>
+      </div>
+      <!-- Carousel 7 end -->
+      <!-- Carousel 8 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Istanbul </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo8">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn8" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn8" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Istanbul Hotels</a></p>
+      </div>
+      <!-- Carousel 8 end -->
+      <!-- Carousel 9 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Las Vegas </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo9">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn9" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn9" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Las Vegas Hotels</a></p>
+      </div>
+      <!-- Carousel 9 end -->
+      <!-- Carousel 10 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Antalya </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo10">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn10" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn10" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Antalya Hotels</a></p>
+      </div>
+      <!-- Carousel 10 end -->
+      <!-- Carousel 11 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Maldives </a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo11">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn11" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn11" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Maldives Hotels</a></p>
+      </div>
+      <!-- Carousel 11 end -->
+      <!-- Carousel 12 start -->
+      <div class="col-md-12 cityname">
+        <h4 class="text-left"> <a href="#"> Kiev</a> </h4>
+        <!-- Carousel -->
+        <div class="wrapper">
+          <div class="list_carousel">
+            <div class="caroufredsel_wrapper" >
+              <ul id="foo12">
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+                <li> <a href=""><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-4.png"></a> <a href="#" class="pull-right hotelprice">$150</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-3.png"></a> <a href="#" class="pull-right hotelprice">$120</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Dubai</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-2.png"></a> <a href="#" class="pull-right hotelprice">$100</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Visit the Hawaii Beaches</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-1.png"></a> <a href="#" class="pull-right hotelprice">$90</a></h6>
+                  </div>
+                </li>
+                <li> <a href="#"><img alt="" src="Content/images/thumb-hawaii.jpg"></a>
+                  <div class="m1">
+                    <h6 class="lh1 dark"><strong><a href="#">Santorini - Greece</a></strong></h6>
+                    <h6 class="lh1"><a href="#" class="pull-left"><img src="Content/images/smallrating-5.png"></a> <a href="#" class="pull-right hotelprice">$170</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+            <a href="#" class="prev" id="prev_btn12" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> <a href="#" class="next" id="next_btn12" style="display: block;"><img alt="" src="Content/images/spacer.png"></a> </div>
+        </div>
+        <p class="text-left showhotels"><a href="#">Show Kiev Hotels</a></p>
+      </div>
+      <!-- Carousel 12 end -->
+    </div>
+  </div>
+  <div> <br/>
+  </div>
+  <div class="clearfix bluediv">
+    <div class="container">
+      <div class="col-md-12 text-left">
+        <h2>Lorem Ipsum</h2>
+      </div>
+      <div class="col-md-5">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard<a href="#"> dummy text</a> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <a href="#">specimen book</a>. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
+        <p>t is a long established fact that a reader will be distracted by the <a href="#">readable content</a> of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+      </div>
+      <div class="col-md-5 col-md-offset-2 right_container">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
+        <button type="button" class="btn btn-lg">Lorem Ipsum is simply dummy text</button>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <div class="footerbgblack mobileview">
+    <div class="container">
+      <!-- End of column 1-->
+      <div class="col-md-3">
+        <ul class="footerlistblack">
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Dubai </a></li>
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Istanbul </a></li>
+        </ul>
+      </div>
+      <!-- End of column 2-->
+      <div class="col-md-3">
+        <ul class="footerlistblack">
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Las Vegas </a></li>
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Antalya </a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="footerlistblack">
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Maldives </a></li>
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Kiev</a></li>
+          <li><span><img src="Content/images/li2.png"></span><a href="#">Delhi</a></li>
+        </ul>
+      </div>
+      <!-- End of column 3-->
+      <div class="col-md-3 socialicons">
+        <div class="scont"> <a class="social1b img" href="#"><img alt="" src="Content/images/icon-facebook.png"></a> <a class="social2b img" href="#"><img alt="" src="Content/images/icon-twitter.png"></a> <a class="social3b img" href="#"><img alt="" src="Content/images/icon-gplus.png"></a> <br>
+          <br>
+          <a href="NewHome.html" class="footerlogo"><img alt="" src="Content/images/logobk2.png"></a><br>
+          <br>
+          <span class="grey2"><a href="#">HOTELS724</a> | &copy; 2014 <br>
+          All Rights Reserved </span> <br>
+          <br>
+        </div>
+      </div>
+      <!--<div class="col-md-3 grey">
+				
+				<span class="ftitleblack">CUSTOMER SUPPORT</span><br><br>
+				<span class="pnr"> 00-800-11-20-11-40</span><br>
+				<span class="grey2">office@hotel724.com</span>
+			</div>		-->
+      <!-- End of column 4-->
+    </div>
+  </div>
+  <!-- footer with dark background-->
+  <div class="footer_wrapper text-center">
+    <ul>
+      <li><a href="#">ABOUT HOTELS724</a></li>
+      <li>|</li>
+      <li><a href="#">PRIVACY POLICY</a></li>
+      <li>|</li>
+      <li><a href="#">TERMS OF USE</a></li>
+      <li>|</li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+    
+	</div>
+</div>
+<!-- END OF WRAP -->
+<!-- Javascript -->
+<!-- This page JS -->
+<script src="Content/js/js-new-homepage.js"></script>
+<!-- Custom functions -->
+<script src="Content/js/functions.js"></script>
+<script src="Content/scrolltotop.js"></script>
+<!-- Picker UI-->
+<script src="Content/assets/jquery-ui/jquery-ui.js"></script>
+<!-- Easing -->
+<!--<script src="Content/assets/jquery/jquery.easing.js"></script>-->
+<!-- jQuery KenBurn Slider  -->
+<script src="Content/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Nicescroll  -->
+<!--<script src="Content/assets/jquery/jquery.nicescroll.min.js"></script>-->
+<script src="Content/chosen.jquery.js" type="text/javascript"></script>
+<!-- CarouFredSel -->
+<script src="Content/assets/jquery/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="Content/assets/jquery/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script src="Content/assets/jquery/helper-plugins/jquery.mousewheel.min.js"></script>
+<script src="Content/assets/jquery/helper-plugins/jquery.transit.min.js"></script>
+<script src="Content/assets/jquery/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+<!-- Custom Select -->
+<script src="Content/assets/jquery/jquery.customSelect.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="Content/assets/bootstrap3.0.3/js/bootstrap.min.js"></script>
+<script type='text/javascript'>
         $(document).ready(function () {
             HouseTrip.Views.SearchBar.load();
             new HouseTrip.Views.Homepage({ el: 'body' });
@@ -859,8 +1615,7 @@
             HouseTrip.Helpers.KissMetrics.setUserProperties();
         });
     </script>
-
-    <script type="text/javascript">
+<script type="text/javascript">
         $(function () {
             HouseTrip.navigationBar = new HouseTrip.Views.NavigationBar({
                 el: '.ht-navbar-collapse',
@@ -869,7 +1624,7 @@
         });
 	
     </script>
-	<script type="text/javascript">
+<script type="text/javascript">
     var config = {
       '.chosen-select'           : {},
       '.chosen-select-deselect'  : {allow_single_deselect:true},
@@ -881,6 +1636,6 @@
       $(selector).chosen(config[selector]);
     };
 	 </script>
+
 </body>
 </html>
-
